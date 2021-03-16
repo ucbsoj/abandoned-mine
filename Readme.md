@@ -1,3 +1,3 @@
 # Abandoned Mines in Colorado
 
-Laurine Lassalle
+Laurine Lassalle.
