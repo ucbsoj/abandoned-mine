@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<title>Example</title>
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<style>
+	  
+	  html,body{
+		overflow-x: hidden;
+	  }
+	  
+	  body{
+		font-family: Garamond, Georgia, serif;
+		line-height: 1.9em;
+	  }
+	  
+	  .text-piece{
+		padding:20px;
+		background-color: #ffffff;
+		width: 50vw;
+		margin: 100vh auto;
+	  }
+	  
+	  .map-section{
+		position: fixed; /* it's relative so that maps line up to this box */
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+		z-index: -1;
+		pointer-events: none;
+	  }
+	  
+	  .map-section > div{
+		position: fixed;
+		width:100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	  }
+	  
+	  #map-1{ background-image:url(images/bearsears-maps-00-desktop.jpg);}
+	  #map-2{ background-image:url(images/bearsears-maps-01-desktop.jpg);}
+	  #map-3{ background-image:url(images/bearsears-maps-02-desktop.jpg);}
+	  #map-4{ background-image:url(images/bearsears-maps-03-desktop.jpg);}
+	  #map-5{ background-image:url(images/bearsears-maps-04-desktop.jpg);}
+	  #map-6{ background-image:url(images/bearsears-maps-05-desktop.jpg);}
+  
+  	</style>
+</head>
+<body>
+  
+  	
+  	<header class="container-fluid bg-secondary text-white min-vh-100 d-flex flex-column align-items-center justify-content-center">
+		<div class="text-center">
+			<h1>What Remains of Bears Ears</h1>
+			<p class="lead">Utah’s politically contentious southeast corner is a living landscape of culture and civilization</p>
+		</div>
+    </header>
+  
+  
+	<div class="container">
+		<div class="row justify-content-center">
+		  	<div class="col-12 col-sm-10 col-md-8 col-lg-6">
+				<p id="p-1">The stories of these earlier peoples are still here, told by the places and things they left behind. And for a century, the region has been at the heart of an unresolved American argument over public lands, and what should be done with them.</p>
+
+				<p id="p-2">In 2016, President Barack Obama created the Bears Ears National Monument, named for a pair of tall buttes that resemble the top of a bear’s head peeking over a ridge. His proclamation recognized the area’s “extraordinary archeological and cultural record” and the land’s “profoundly sacred” meaning to many Native American tribes.</p>
+
+				<p id="p-3">Eleven months later, in early December of 2017, President Trump reduced Bears Ears by 85 percent, an action that Utah officials and some local residents wanted. His rollback also followed a uranium firm’s concerted lobbying, an effort led by Andrew Wheeler, who now heads the Environmental Protection Agency.</p>
+			</div>
+	    </div>
+	</div>
+ 
+  
+	<div class="text-piece">
+	  <p id="p-4">The region, northwest of the much-visited Four Corners, includes a stunning variety of topography —  flat-topped mesas and expansive valleys, sloping igneous mountains and towering sandstone cliffs.</p>
+  	</div>
+
+	<div class="text-piece">
+	  <p id="p-5">The Obama monument protected 1.35 million acres of federally-owned land and covered much of San Juan County, which has about 15,000 residents.</p>
+  	</div>
+
+	<div class="text-piece">
+	  <p id="p-6">The designation prevented energy development and mining and allowed for restricting where vehicles could go. Republicans accused Obama of presidential overreach and said the new monument was a late-term, large “federal land grab.”</p>
+  	</div>
+
+	<div class="text-piece">
+	  <p id="p-7">Trump, in reducing the size of the monument, said “important objects of scientific or historic interest can instead be protected by a smaller and more appropriate reservation” of two disconnected parts, Shash Jaa and Indian Creek.</p>
+  	</div>
+        
+  	<!-- data-[offset]-(viewport-anchor)-[element-anchor] -->
+  
+	<div class="map-section">
+	  <div id="map-1" data-anchor-target="#p-3" data-200-top-top="opacity:0;" data-top-bottom="opacity:1;"></div>
+	  <div id="map-2" data-anchor-target="#p-3" data-top-bottom="opacity:0;" data--50-top-bottom="opacity:1;"></div>
+	  <div id="map-3" data-anchor-target="#p-4" data-center-top="opacity:0;" data-center-center="opacity:1;"></div>
+	  <div id="map-4" data-anchor-target="#p-5" data-center-top="opacity:0;" data-center-center="opacity:1;"></div>
+	  <div id="map-5" data-anchor-target="#p-6" data-center-top="opacity:0;" data-center-center="opacity:1;"></div>
+	  <div id="map-6"></div>
+    </div> 
+  
+  <script src="js/skrollr.min.js"></script>
+  <script>
+  	var s = skrollr.init();
+  </script>
+</body>
+</html>
