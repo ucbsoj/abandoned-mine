@@ -21,6 +21,8 @@
     <meta property="og:image" content="">
     <meta property="og:description" content="">
 
+    
+
     <!-- Schema.org structured data -->
     <script data-schema="NewsArticle" type="application/ld+json">
     {
@@ -43,128 +45,233 @@
       },
       "description": "/* seo.description */"
     }
-
-
     </script>
     
     <style>
     
-    body{background-color: black; color: white; font-size: 20px; font-family: "Georgia", Times, sans-serif; }
+      *{
+        background-repeat: no-repeat !important;
+        background-position: center;
+      }
+      
+      body{background-color: black; color: white; font-size: 20px; font-family: "Georgia", Times, sans-serif; }
+      
+      .fullscreen-video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        height: 100vh;
+        width: auto;
+      }
+      
+      @media (min-aspect-ratio:16/9){
+        .fullscreen-video{
+          height: auto;
+          width: 100vw;
+        }
+      }
+      
+/*
       #bonita{position: relative; top: 50vh; }
-      #ott{background-image: url("assets/assetsthesisabandonedmines/ott.jpeg");
-      background-attachment: fixed;
-      background-size: 100%; padding-right: 30px; }
-      
-      #text_ott {background: rgba(0, 0, 0, 0.5); padding: 20px;}
-      
-      #bigfour{background-attachment: fixed; background-image: url("assets/assetsthesisabandonedmines/bigfour.jpg"); background-size: 100%;}
-      
-      #text_bigfour{background: rgba(0, 0, 0, 0.5); padding: 20px;}
-      .firstcharacter{font-size: 70px;float: left; line-height: 60px; line-height: 60px; padding-right: 8px; padding-left: 3px;}
-}
-      #wtp_map{background-image: url(assets/assetsthesisabandonedmines/WTP_map.jpg);
-      background-attachment: fixed;
-      background-size: 100%;}
-      
-       #wtp_1{background-image: url("assets/assetsthesisabandonedmines/WTP_1.jpeg");
-      background-attachment: fixed;
-      background-size: 100%;}
-      
-       #wtp_2{background-image: url("assets/assetsthesisabandonedmines/WTP_2.jpeg");
-      background-attachment: fixed;
-      background-size: 100%;}
-      
-       #wtp_3{background-image: url("assets/assetsthesisabandonedmines/WTP_3.jpeg");
-      background-attachment: fixed;
-      background-size: 100%;}
-      
-        #wtp_4{background-image: url("assets/assetsthesisabandonedmines/WTP_4.jpeg");
-      background-attachment: fixed;
-      background-size: 100%;}
-      
-      #text_wtp{background: rgba(0, 0, 0, 0.5); padding: 20px;}
       #subbonita{top: 50vh;  position: relative;}
-      #creede{position: relative; top: 50vh;}
-        #subcreede{top: 50vh;  position: relative;}
-         #flood{background-image: url("assets/assetsthesisabandonedmines/flood_v2.png");
-            background-size: 100%; background-attachment: fixed;}
+*/
       
-      #text_flood {background: rgba(0, 0, 0, 0.5); padding: 20px;}
-      #creede_map-s1{background-image: url("assets/assetsthesisabandonedmines/creede_map-s1.png");
-            background-size: 100%; background-attachment: fixed;}
+      #ott{
+        background-attachment: fixed; 
+        background-size: cover; 
+      }
       
-      #creede_map-s2{background-image: url("assets/assetsthesisabandonedmines/creede_map-s2.png");
-            background-size: 100%; background-attachment: fixed;}
-      #creede_map-s3{background-image: url("assets/assetsthesisabandonedmines/creede_map-s3.png");
-            background-size: 100%; background-attachment: fixed;}
+      #text_ott {
+        background: rgba(0, 0, 0, 0.5); 
+      }
+      
+      #bigfour{
+        background-attachment: fixed; 
+        background-size: contain; 
+      }
+      
+      #text_bigfour{
+        background: rgba(0, 0, 0, 0.5); 
+      }
+      
+      .firstcharacter{
+        font-size: 70px;
+        float: left; 
+        line-height: 60px; 
+        padding-right: 8px; 
+        padding-left: 3px;
+      }
+
+      #wtp_map{
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      #wtp_1{
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      #wtp_2{
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      #wtp_3{
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      #wtp_4{
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      .text_wtp{
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+
+      #flood{
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #creede_map-s1{
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      
+      #creede_map-s2{
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #creede_map-s3{
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #text_creede_map {
+        background: rgba(0, 0, 0, 0.5); 
+      }
+      
+      #mcclure {
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #text_mcclure {
+        background: rgba(0, 0, 0, 0.5); 
+      }
+      
+      #trailer {
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #patti_portrait{
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #neighborhood{
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #garden{
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #letter{
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #ou1{
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #ou2{
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #map_aspen{
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #map_aspen_mines{
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #solomon{  
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #amethyst{
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #superfund {
+        background-size: contain; 
+        background-attachment: fixed;
+      }
+      
+      #pile {
+        background-size: cover; 
+        background-attachment: fixed;
+      }
       
       
-      #text_creede_map {background: rgba(0, 0, 0, 0.5); padding: 20px; margin-right: 200px;}
-      
-      #mcclure {background-image: url("assets/assetsthesisabandonedmines/mcclure.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-      
-      #text_mcclure {background: rgba(0, 0, 0, 0.5); padding: 20px; margin-right: 20px;}
-      #trailer {background-image: url("assets/assetsthesisabandonedmines/trailer_park.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-      
-       #aspen{position: relative; top: 50vh;}
-        #subaspen{top: 50vh;  position: relative;}
-      
-      #patti_portrait{background-image: url("assets/assetsthesisabandonedmines/patti_portrait.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-      #neighborhood{background-image: url("assets/assetsthesisabandonedmines/patti_neighborhood.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-      #garden{background-image: url("assets/assetsthesisabandonedmines/garden.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-       #letter{background-image: url("assets/assetsthesisabandonedmines/letter_sc.png");
-            background-size: 100%; background-attachment: fixed;}
-      
-      #ou1{background-image: url("assets/assetsthesisabandonedmines/OU1.png");
-            background-size: 100%; background-attachment: fixed;}
+      #map_access_nelson  {
+        background-size: cover; 
+        background-attachment: fixed;
+      }
       
       
+      #map_access_commodore {
+        background-size: contain; 
+        background-attachment: fixed;
+      }
       
-      #ou2{background-image: url("assets/assetsthesisabandonedmines/OU2.png");
-            background-size: 100%; background-attachment: fixed;}
+      #nelson_tunnel  {
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #access  {
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+      
+      #town{
+        background-size: cover; 
+        background-attachment: fixed;
+      }
       
       
-      
-      #map_aspen{background-image: url("assets/assetsthesisabandonedmines/map_aspen.jpg");
-            background-size: 100%; background-attachment: fixed;}
-      
-      #map_aspen_mines
-      {background-image: url("assets/assetsthesisabandonedmines/mine_aspen_map.png");
-            background-size: 100%; background-attachment: fixed;}
-        #solomon
-      {background-image: url("assets/assetsthesisabandonedmines/solomon.png");
-            background-size: 100%; background-attachment: fixed;}
-      #amethyst
-      {background-image: url("assets/assetsthesisabandonedmines/amethyst.png");
-            background-size: 100%; background-attachment: fixed;}
-      
-      #superfund {background-image: url("assets/assetsthesisabandonedmines/creede_mines/nelson_tunnel_sf.jpg");
-            background-size: 100%; background-attachment: fixed;}
-      
-      #pile {background-image: url("assets/assetsthesisabandonedmines/creede_mines/commodore_pile.JPG");
-            background-size: 100%; background-attachment: fixed;}
-      #map_access_nelson  {background-image: url("assets/assetsthesisabandonedmines/creede_mines/nelson_collapsed.png");
-            background-size: 100%; background-attachment: fixed;}
-      #map_access_commodore {background-image: url("assets/assetsthesisabandonedmines/commodore_access.png");
-            background-size: 100%; background-attachment: fixed;}
-      #nelson_tunnel  {background-image: url("assets/assetsthesisabandonedmines/creede_mines/collapsed.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-      #access  {background-image: url("assets/assetsthesisabandonedmines/creede_mines/commodore.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-      
-      #town{background-image: url("assets/assetsthesisabandonedmines/creede_mines/water_town.jpeg");
-            background-size: 100%; background-attachment: fixed;}
-      
+/*
+      #creede_video{
+        position: absolute;
+        height:100vh;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+*/
       
     </style>
-    
-
-
     <title>Abandoned Mines: Mining Legacy</title>
   </head>
   <body>
@@ -172,24 +279,21 @@
     
     
     <div class="hero" role="banner">
-      <header class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center vh-100">
+      <header class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center vh-100 position-relative overflow-hidden">
         <h1 class="display-2 font-weight-bold">Mining Legacy</h1>
-  <p>By Laurine Lassalle</p>
-        
-        <!-- Uncomment below for background video -->
-        
-         <video src="assets/sample-images/hero_image.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
-        
+          <p>By Laurine Lassalle</p>
+          <video class="lozad" muted loop playsinline autoplay data-poster="assets/hero_video/hero_video.jpg">
+            <source src="assets/hero_video/playlist.m3u8" type="application/x-mpegURL">
+            <source src="assets/hero_video/hero_video.mp4" type="video/mp4">
+          </video>
       </header>
     </div>
     
     
     
-    <section class="container-fluid" role="main">
+    <div class="container-fluid">
       
       
-    
-
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
           <p><span class ="firstcharacter">M</span>ines have once made the wealth of their towns, their people, their companies, and the state of Colorado. But this wealth came with a price — an environmental price tag. </p>
@@ -206,53 +310,49 @@
       
       <!-- Mine Image -->
       <div class="row justify-content-center mt-5">
-        <div class="col-12 col-sm-10">
+        <div class="col-12 col-sm-10 position-relative vh-100">
           
-          <img class="img-fluid d-block" src="assets/assetsthesisabandonedmines/map_click_v2.png" alt="image of a map" usemap="#image-map">
-          
+          <img class="img-fluid d-block pt-0 mt-0 position-absolute top-0 start-0" src="assets/assetsthesisabandonedmines/map_click_v2.png">
+          <img class="img-fluid d-block pt-0 mt-0 position-absolute top-0 start-0 onscroll-fadein" src="assets/assetsthesisabandonedmines/map_click_v2_bonita.png" alt="image of a map" usemap="#image-map" style="opacity:0;">
           
           <!-- https://www.image-map.net/ -->
-          
           <map name="image-map">
-          <area target="_self" alt="Bonita Peak Mining District" title="Bonita Peak Mining District" href="#bonita" coords="929,1188,746,910" shape="rect">
-          <area target="_self" alt="Creede" title="Creede" href="#creede" coords="1083,1037,966,924" shape="rect">
-          <area target="_self" alt="Aspen" title="Aspen" href="#aspen" coords="1184,694,977,550" shape="rect">
-                </map>
-        </div>
-      </div>
+            <area target="_self" alt="Bonita Peak Mining District" title="Bonita Peak Mining District" href="#bonita" coords="929,1188,746,910" shape="rect">
+            <area target="_self" alt="Creede" title="Creede" href="#creede" coords="1083,1037,966,924" shape="rect">
+            <area target="_self" alt="Aspen" title="Aspen" href="#aspen" coords="1184,694,977,550" shape="rect">
+          </map>
+          
+        </div><!-- close .col -->
+      </div><!-- close .row -->
       
-     <div class="row justify-content-center mt-5">
-        <div class="col-12 col-sm-10">
-          
-          <img class="img-fluid d-block" src="assets/assetsthesisabandonedmines/map_click_v2_bonita.png">
-          
-       </div>
-      </div>
-          
+      
+    </div><!-- close .container-fluid -->
+      
   
       
-      
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    <!---------------- 
+
+    Bonita Peak Section 
+
+    ------------------->
+
+
+    <div class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center position-relative vh-100 overflow-hidden"> 
+      <h1 id="bonita" class="display-4 font-weight-bold">Bonita Peak Mining District:</h1>  
+      <h2 id="subbonita" class="display-5 font-weight-bold"> a 48-Piece Puzzle</h2>
+
+      <!-- Lazy loading video so webpage is faster -->
+      <video class="fullscreen-video lozad" muted loop playsinline autoplay data-poster="assets/assetsthesisabandonedmines/cement_3_4.jpg">
+        <source data-src="assets/assetsthesisabandonedmines/cement_3_4.mp4" type="video/mp4">
+      </video>
+    </div>
     
-      <div class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center"> 
-      
-          <h1 id="bonita" class="display-4 font-weight-bold">Bonita Peak Mining District:</h1>  
-        <h2 id="subbonita" class="display-5 font-weight-bold"> a 48-Piece Puzzle</h2>
-     <video src="assets/assetsthesisabandonedmines/cement_3_4.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
-      
-      </div>
+    
+    
+    <div class="container-fluid">
       
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
-          <br>
-          <br>
-          <br>
-          <br>
           <p><span class ="firstcharacter">S</span>cott Roberts was in his office in Durango located about two blocks from the Animas River. The day started like any others until the phone rang. “Hey, there’s been a mine release in the Silverton area and it’s heading down to Durango.” It was August 5, 2015.</p> 
 
            <p> Durango is located about 50 miles downstream from Silverton where a contractor hired by the Environmental Protection Agency was doing that morning some investigation work at the Gold King Mine, which caused the leak of the pressurized water behind the collapse portal of the mine and the discharge of 3 million gallons of contaminated water into the Animas River. </p>
@@ -272,13 +372,14 @@
       </div><!-- close row -->
       
       
-          <!-- two side-by-side images, each column 6 -->
+      
+      <!-- two side-by-side images, each column 6 -->
       <div class="row justify-content-center">
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/IMG_1274-1.jpeg" class="img-fluid" alt="Picture of a man in a river">
+          <img data-src="assets/assetsthesisabandonedmines/IMG_1274-1.jpeg" class="lozad img-fluid" alt="Picture of a man in a river">
         </div>
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/IMG_1264.jpeg" class="img-fluid" alt="Picture of water samples">
+          <img data-src="assets/assetsthesisabandonedmines/IMG_1264.jpeg" class="lozad img-fluid" alt="Picture of water samples">
         </div>
       </div>
       
@@ -286,201 +387,183 @@
       
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
-           <p>The scene was surreal for the scientists but also and for the locals who woke up in the morning with their nearby river now orange.</p>
+          
+          <p>The scene was surreal for the scientists but also and for the locals who woke up in the morning with their nearby river now orange.</p>
 
-            <p>The spill put the spotlight on a massive issue that most of the US western states are facing: the discharge and difficult cleanup of abandoned mines. 
-            </p>
+          <p>The spill put the spotlight on a massive issue that most of the US western states are facing: the discharge and difficult cleanup of abandoned mines.</p>
         
-           <p>The Gold King Mine was shut down in 1922. It is one of the 400 abandoned and inactive mine sites located in the Upper Animas Watershed. </p>
-        <p>The latest operating mine closed in 1991, but these sites still discharge contaminated water that contains heavy metals such as cadmium, zinc, iron, arsenic, copper, manganese, lead, and aluminum into streams, which made the watershed unable to sustain aquatic life.</p>
+          <p>The Gold King Mine was shut down in 1922. It is one of the 400 abandoned and inactive mine sites located in the Upper Animas Watershed. </p>
+          
+          <p>The latest operating mine closed in 1991, but these sites still discharge contaminated water that contains heavy metals such as cadmium, zinc, iron, arsenic, copper, manganese, lead, and aluminum into streams, which made the watershed unable to sustain aquatic life.</p>
         
-          </div>
-      </div>
+        </div><!-- close .row -->
+      </div><!-- close .col -->
       
+    </div><!-- close .container-fluid -->
+    
+    
+    <div class="spacer" style="height:50vh;">&nbsp;</div>
   
-    <video src="assets/assetsthesisabandonedmines/SilvertonGKM_1.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
+    
+    
+    <!-- Silverton Video Scrolling -->
+    <div id="silverton-video-holder" class="position-relative" style="height:20000px;overflow: visible;">
+      <video poster="assets/silverton/SilvertonGKM_1.jpg" preload muted playsinline class="position-sticky top-50 translate-middle-y w-100">
+        <source src="assets/silverton/playlist.m3u8" type="application/x-mpegURL">
+        <!-- <source src="assets/silverton/SilvertonGKM_1.mp4" type="video/mp4"> -->
+      </video>
+    </div>
   
+    
 
       
-      
-      
-       <div class="row justify-content-center mt-5">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
-
             <p>Though the sight was alarming, the Gold King Mine spill did not cause any fish kills.</p> 
 
             <p>Roberts reported enormous spikes in metals during the spill. “Some of the metals were 100 to 1,000 times greater than they were before the event,” he said. </p>
 
             <p>But it didn’t last. “It was like a slug of mine water that moved through in just a couple of days,” Roberts said. If it had stayed at those elevated metal concentrations for longer, Roberts thinks, there would have been a much greater impact on aquatic life. The sludge moved quickly so aquatic life wasn’t exposed to high levels of contaminants for more than a few days. 
             </p>
-        </div>
-      </div>
-      
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
+    
+    
     
       
-<!--           full screen image with slight margins due to container-fluid -->
+    <!--  Lazy load, and also use SrcSet to use only the size we need for the browser -->          
+    <img class="lozad img-fluid" data-src="assets/assetsthesisabandonedmines/SL0631@1x.jpg" 
+         data-srcset="
+            assets/assetsthesisabandonedmines/SL0631@1x.jpg 1212w,
+            assets/assetsthesisabandonedmines/SL0631@2x.jpg 2424w,
+            assets/assetsthesisabandonedmines/SL0631@3x.jpg 4847w"
+         sizes="100vw"
+         alt="Picture of Silverton">
+    
+    
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
           
-  <img src="assets/assetsthesisabandonedmines/__SL0631.jpeg" class="img-fluid" alt="Picture of Silverton">
-    
-    <div class="row justify-content-center mt-5">
-      <div class="col-12 col-sm-8 col-md-6">
-      <p> After the spill, federal and state officials came into town to talk about the issue. The Town of Silverton, San Juan County, City of Durango, La Plata County, local tribes and other interested stakeholders wrote a letter to request that the site be added to the National Priority List of the Superfund program. </p>
+        <p> After the spill, federal and state officials came into town to talk about the issue. The Town of Silverton, San Juan County, City of Durango, La Plata County, local tribes and other interested stakeholders wrote a letter to request that the site be added to the National Priority List of the Superfund program. </p>
 
-      <p>The Superfund program designed toxic sites that need to be cleaned up. It is under the EPA’s jurisdiction. The National Priority List (NPL)  is part of the program and gathers the sites that need to be treated first due to their toxicity. </p>
- 
-      <p>In September 2016, the EPA finally added the Bonita Peak Mining District, which includes the Gold King Mine and 47 other abandoned sites, to the NPL. </p>
+        <p>The Superfund program designed toxic sites that need to be cleaned up. It is under the EPA’s jurisdiction. The National Priority List (NPL)  is part of the program and gathers the sites that need to be treated first due to their toxicity. </p>
 
-      <p>The EPA pushed multiple times before for the creation of a Superfund site, but the community had always been reticent about declaring the mine as a Superfund site until the Gold King Mine spill happened, because some of them had the hope to potentially start mining again in the area and any site designated as a Superfund would have had drastic effects of ever seeing it open and providing economic opportunities for the community.</p>
+        <p>In September 2016, the EPA finally added the Bonita Peak Mining District, which includes the Gold King Mine and 47 other abandoned sites, to the NPL. </p>
 
-      <p>“When your economy relies on visitors coming, you're worried of course that the people will not come visit because they think it's an unhealthy place,” Ty Churchwell of Trout Unlimited said. “Well, the Gold King Spill opened the door. The whole world saw it.”</p>
+        <p>The EPA pushed multiple times before for the creation of a Superfund site, but the community had always been reticent about declaring the mine as a Superfund site until the Gold King Mine spill happened, because some of them had the hope to potentially start mining again in the area and any site designated as a Superfund would have had drastic effects of ever seeing it open and providing economic opportunities for the community.</p>
 
-      <p>The spill happened six years ago, but the issue hasn’t been resolved despite EPA taking over the site and the cleanups, essentially due to the complexity and the size of the Superfund site.
-      </p>
-        <br>
+        <p>“When your economy relies on visitors coming, you're worried of course that the people will not come visit because they think it's an unhealthy place,” Ty Churchwell of Trout Unlimited said. “Well, the Gold King Spill opened the door. The whole world saw it.”</p>
+
+        <p>The spill happened six years ago, but the issue hasn’t been resolved despite EPA taking over the site and the cleanups, essentially due to the complexity and the size of the Superfund site.</p>
           
-       </div>
-    </div>
+       </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
       
-       <img src="assets/assetsthesisabandonedmines/K_SL0641.jpeg" class="img-fluid" alt="Picture of river">
+    
+    
+    <!--  Lazy load, and also use SrcSet to use only the size we need for the browser -->  
+    <img class="lozad img-fluid" data-src="assets/assetsthesisabandonedmines/K_SL0641@0.25x.jpg" 
+         data-srcset="
+            assets/assetsthesisabandonedmines/K_SL0641@1x.jpg 5760w,
+            assets/assetsthesisabandonedmines/K_SL0641@0.75x.jpg 4320w,
+            assets/assetsthesisabandonedmines/K_SL0641@0.5x.jpg 2880w,
+            assets/assetsthesisabandonedmines/K_SL0641@0.25x.jpg 1440w,
+            assets/assetsthesisabandonedmines/K_SL0641@0.1x.jpg 580w"
+         sizes="100vw"
+         alt="Picture of river">
+    
+    
 
     
-       <div class="row justify-content-center mt-5">
-      <div class="col-12 col-sm-8 col-md-6">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p>Despite the drastic effects of the Gold King Spill, the EPA announced last January that they plan this summer to drill into a different mine, the collapsed entrance of the Bandora Mine near Silverton that’s also at risk of a blowout. </p>
 
+          <p>“If the situation sounds familiar, it is,” wrote The Durango Herald on Jan. 16. According to the Durango Herald, the collapsed portal could create a blowout that could put numbers of people at risk, but no one knows how much water is behind the entrance. According to The Durango Herald, the EPA intends to remove a pile of dirt and rock blocking the entrance.</p>
 
-      <p>Despite the drastic effects of the Gold King Spill, the EPA announced last January that they plan this summer to drill into a different mine, the collapsed entrance of the Bandora Mine near Silverton that’s also at risk of a blowout. </p>
-
-      <p>“If the situation sounds familiar, it is,” wrote The Durango Herald on Jan. 16. According to the Durango Herald, the collapsed portal could create a blowout that could put numbers of people at risk, but no one knows how much water is behind the entrance. According to The Durango Herald, the EPA intends to remove a pile of dirt and rock blocking the entrance.</p>
- 
-      <p>According to the Bureau of Land Management, there are about half a million abandoned mines across the country — and most are in the West. More than 23,000 of them are in Colorado.</p>
-        
- 
-        </div>
-         
-      </div>
+          <p>According to the Bureau of Land Management, there are about half a million abandoned mines across the country — and most are in the West. More than 23,000 of them are in Colorado.</p>
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
       
    
       
-      
+    <!-- Big Four section -->
 
-    <!-- Example of a Graphics Scrolling Section -->
-    <div id="bigfour" class="scroll-graphic container-fluid position-relative">
-        
-        <div class="row justify-content-center d-flex flex-column align-items-center">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-          
-         
-              <p  id = "text_bigfour" data-image="assets/assetsthesisabandonedmines/bigfour.jpg"> The Gold King Mine, Red & Bonita, Mogul and the American Tunnel — also known as “The Big Four” — account for 80% of the contamination around Silverton.</p>
-              
-                
-          </div>
-        </div>
-      
-        
-        
-    </div><!-- close container -->
-    
-       <div class="row justify-content-center mt-5">
-      <div class="col-12 col-sm-8 col-md-6">
-
+    <div id="bigfour" class="scroll-graphic container-fluid position-relative lozad" data-background-image="assets/assetsthesisabandonedmines/bigfour.jpg">
+      <div class="row justify-content-center d-flex flex-column align-items-center">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+          <p id="text_bigfour"> The Gold King Mine, Red &amp; Bonita, Mogul and the American Tunnel — also known as “The Big Four” — account for 80% of the contamination around Silverton.</p>
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
     
     
-        <p>Most mine owners left without cleaning up their properties except the latest mine operator, Sunnyside Gold Corp, which signed a consent decree in 1996. Sunnyside agreed to bulkhead its mine, which consists of placing a plug in the mine, and to clean up abandoned mines nearby. Sunnyside operated a water treatment plan that Kinross Gold Corporation took over in 2003, but the plant stopped operating after technical and financial troubles the next year.</p>
- 
-        <p>“When Sunnyside Gold was treating the water before the consent decree, the water quality here was much better for the macroinvertebrates. The benthic insects were a lot healthier in the river and so the water. The trout population was better. But when they stopped treating it, we got back to the high iron and aluminum, which are hard for the fish,” John Ott, the general manager of Animas Water Company, said.</p>
-
-        <p>Durango’s drinking water is groundwater and comes from the Florida River. In the early 20th century, Durango was using the Animas River as its water supply, but because the mines were dumping mining waste in the river, Durango switched to the Florida River where no one was mining or dumping anything in the river. Now the Animas River in Durango meets quality standards and is used only as a backup water supply.
-         </p>
-        <p>After the spill in 2015, Ott had to make sure drinking water was safe in Durango. “I worked closely with the state engineer’s office and the water quality control division to test our water and test other wells, drinking water wells, in the valley to make sure there wasn't going to be any effect from the spill,” Ott said. “And there wasn't.”</p>
-        <br>
-        
-         </div>
-    </div>
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p>Most mine owners left without cleaning up their properties except the latest mine operator, Sunnyside Gold Corp, which signed a consent decree in 1996. Sunnyside agreed to bulkhead its mine, which consists of placing a plug in the mine, and to clean up abandoned mines nearby. Sunnyside operated a water treatment plan that Kinross Gold Corporation took over in 2003, but the plant stopped operating after technical and financial troubles the next year.</p>
+          <p>“When Sunnyside Gold was treating the water before the consent decree, the water quality here was much better for the macroinvertebrates. The benthic insects were a lot healthier in the river and so the water. The trout population was better. But when they stopped treating it, we got back to the high iron and aluminum, which are hard for the fish,” John Ott, the general manager of Animas Water Company, said.</p>
+          <p>Durango’s drinking water is groundwater and comes from the Florida River. In the early 20th century, Durango was using the Animas River as its water supply, but because the mines were dumping mining waste in the river, Durango switched to the Florida River where no one was mining or dumping anything in the river. Now the Animas River in Durango meets quality standards and is used only as a backup water supply.</p>
+          <p>After the spill in 2015, Ott had to make sure drinking water was safe in Durango. “I worked closely with the state engineer’s office and the water quality control division to test our water and test other wells, drinking water wells, in the valley to make sure there wasn't going to be any effect from the spill,” Ott said. “And there wasn't.”</p>
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
        
- 
-  <div id="ott" class="scroll-graphic container-fluid position-relative">
-        
-        <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out"
-             data-image="assets/assetsthesisabandonedmines/ott.jpeg">
-             <p id="text_ott">  Ott also owns a ranch between Durango and Silverton and he recalled he had turned his irrigation water off for one or two days after the spill.</p>
-               <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <p id="text_ott">But farmers and ranchers in the region are used to dealing with the water impacted by mining. </p>
-            </div>
-        </div>
     
-            
-             <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out" data-image="assets/assetsthesisabandonedmines/ott.jpeg"> 
-            <p id="text_ott">Typically, Ott said, in the summertime, the big thunderstorms in Silverton turn the river orange. 
-              </p>
-            <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-              <p id="text_ott">  Farmers and ranchers, like Ott, turn the headgate off on the main river and they don’t use that water to irrigate. 
-                </p>
-            </div>
-        </div>
-            
-              
-            
-             <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out" data-image="assets/assetsthesisabandonedmines/ott.jpeg">
-              <p id="text_ott">   The same happened with the Gold King Mine.
-                </p>
-            
-          </div>
-        </div>
-            
+    
+    
+    <!-- OTT section -->
+ 
+    <!-- lazy load, offer multiple background images to load more quickly based on screen size -->
+    <div id="ott" class="scroll-graphic container-fluid position-relative lozad" 
+       data-background-image-set="
+          url('assets/assetsthesisabandonedmines/ott.jpg') 3x, 
+          url('assets/assetsthesisabandonedmines/ott@0.75x.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/ott@0.5x.jpg') 1x">
+
+    <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
+      <div class="graphic-text-box col-10 col-sm-6 col-md-4">
+        
+        <p id="text_ott" class="spread-out">Ott also owns a ranch between Durango and Silverton and he recalled he had turned his irrigation water off for one or two days after the spill.</p>
+        
+        <p id="text_ott" class="spread-out">But farmers and ranchers in the region are used to dealing with the water impacted by mining. </p>
+        
+        <p id="text_ott" class="spread-out">Typically, Ott said, in the summertime, the big thunderstorms in Silverton turn the river orange.</p>
+        
+        <p id="text_ott" class="spread-out"> Farmers and ranchers, like Ott, turn the headgate off on the main river and they don’t use that water to irrigate.</p>
+        
+        <p id="text_ott" class="spread-out">The same happened with the Gold King Mine.</p>
+        
+      </div>
+    </div>
   </div>
     
     
 
     
     
-    
+  <div class="container">
     
      <div class="row justify-content-center mt-5">
        <div class="col-12 col-sm-8 col-md-6">
 
-
          <p>Abandoned mines are a serious threat to the environment, especially to water quality, and to insect and fish populations. In most former mining districts, the watersheds have not seen any fish in decades. </p>
 
-         <p>But as we get farther away from the mines, water quality gets better. In Durango, for example, fish can be found in the Animas River because the town is 50 miles away downstream from the mines, and so dilution has made the streams less concentrated in heavy metals than they are in Silverton, which is closer to the mines.
-         </p>
-         <p>Several studies over the years have shown that ptarmigans in the Animas River watershed have a lower life span. Those little birds that look like chickens have been impacted by elevated levels of cadmium, which makes their bones brittle and die easily. Other species, like the American robin may be at risk from lead exposure.</p>
+         <p>But as we get farther away from the mines, water quality gets better. In Durango, for example, fish can be found in the Animas River because the town is 50 miles away downstream from the mines, and so dilution has made the streams less concentrated in heavy metals than they are in Silverton, which is closer to the mines.</p>
          
-         <br>
+         <p>Several studies over the years have shown that ptarmigans in the Animas River watershed have a lower life span. Those little birds that look like chickens have been impacted by elevated levels of cadmium, which makes their bones brittle and die easily. Other species, like the American robin may be at risk from lead exposure.</p>
 
-         <h3>Liability and action</h3>
-         <br>
-
+         <h3 class="mt-5 mb-3">Liability and action</h3>
 
          <p>Peter Butler was running the Animas River Stakeholders group as the coordinator until 2019 when the group ceased to exist.</p>
 
@@ -500,703 +583,832 @@
 
          <p>In 2019, the stakeholders’ group was shut down after being around for 25 years. Butler said the EPA wasn’t paying much attention to them, so they decided to create a Community Advisory Group (CAG), which under CERCLA forces the EPA to interact with them, even though they don’t have to listen to them. </p>
 
-  <br>
-         <h3>Treating the water</h3>
-  <br>
+         <h3 class="mt-5 mb-3">Treating the water</h3>
+         
          <p>A 15-minute drive from Silverton, following the turns of Cement Creek, to the ghost town of Gladstone, a gray sheet metal building sits surrounded by gray and off-white silos. “That’s the water treatment plant,” Churchwell said. </p>
 
 
-       </div>
-     </div>
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
  
         
-         <div  class="scroll-graphic container-fluid position-relative">
-          <div id="wtp_map" class="row justify-content-center d-flex flex-column align-items-center">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_map.jpg">
-            <p id="text_wtp">Since October 2015, discharge from the Gold King Mine has been collected and treated at this 1.5 million interim treatment plant in Gladstone.</p>
-          </div>
-        </div>
-           
-
-       
-        
-        <div id="wtp_1" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_1.jpeg">
-            <p id="text_wtp">According to the EPA, approximately 800 million gallons of Gold King mine water had been treated as of June 2018.</p>
-          </div>
-        </div>
-        
-            <div id ="wtp_2" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_2.jpeg">
-            <p id="text_wtp">The water treatment plant uses limestone to neutralize the acidity of the water. </p>
-          </div>
-        </div>
-           
-             <div id="wtp_3" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_3.jpeg">
-            <p id="text_wtp">The process produces 4,600 cubic yards of sludge a year, which are being managed at that location.  </p>
-          </div>
-        </div>
-           
-                <div id= "wtp_4" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_4.jpeg">
-            <p id="text_wtp">But the storage capacity is limited, and the EPA has been exploring other locations to manage the sludge. </p>
-          </div>
-        </div>
-           
-    </div>
-  
-        
-          <div class="row justify-content-center mt-5">
-            <div class="col-12 col-sm-8 col-md-6">
-              <p>“Right now, we have to rely on a lime treatment plant, but the reality is that's only treating one mine — and there are 48 mining or mining-related sites in this district,” Michelle Furi, the Mountain Studies Institute’s deputy director said. “It's really not tackling the problem, it’s barely even touching it.”</p>
-
-              <p>MSI encourages innovation in mine cleanups.</p>
-
-              <p>“Unfortunately, what we have right now is that sort of dinosaur of a lime treatment plant,” Furi said.</p>
-
-              <p>Treatment plants are costly because they require at least $1 million a year to run without any end in sight. The limestone needs to be mined elsewhere — for the Gladstone treatment plant, lime is mined in Monarch pass, about 165 miles away.</p>
-
-              <p>“They [treatment plants] create this cumbersome byproduct of the sludge that then has to be dried out, then it has to be trucked and stored permanently somewhere else, and then capped,” Furi said. “The carbon footprint there is just astronomical.”</p>
-
-              <p>The two most common “solutions” to clean up mine sites are water treatment plans and bulkheads. The problem with bulkheads is that they usually regulate the flow, but they don’t stop the contamination from happening. Bulkheads help to change the chemistry of the water, as acidity occurs when oxygen is present. So as the tunnel fills up with water behind a bulkhead, oxygen disappears, which makes the water cleaner.</p>
-
-              <p>Before the spill in 2015, the EPA installed a bulkhead at Red & Bonita the same year, but they didn’t close the valve until summer 2020. Then, they reopened the valve in September 2020 to drain down the impounded water behind the bulkhead. That water then goes to the Gladstone water treatment plant to be treated.</p>
-
-              <p>The experiment helps better understand the hydrology of the region.</p>
-
-              <p>MSI holds an annual innovation expo and a boot camp, which acts as an accelerator for startups. “There's a lot of technologies that are innovative from drones and robotics to bio cement,” Furi said.</p>
-
-              <p>But innovation has to overcome the lack of money and comply with a complex regulation framework.</p>
-
-              <p>“We see EPA really wanting to engage with that and looking for innovative technologies to incorporate them where they can in these sites,” Furi said. “We have a long way to go.”</p>
-
-              <p>Wetlands could be one of the possible solutions. In 2019, contractors for the Bureau of Land Management were finishing a constructed wetlands with an iron terrace at Elk Tunnel, which can act as natural filters to neutralize the acidity.</p>
-
-              <p>Electrocoagulation, which consists of injecting electricity into the water to remove heavy metals has also been attempted at the American Tunnel in 2012.</p>
-
-              <p>“One of the challenges, there, is the volume,” Furi said. Most innovative technologies were tested on small volumes of water, and often cannot handle the volume that a water treatment plant can.</p>
-
-              <p>But if most innovative solutions haven’t been implemented at a larger scale, it’s also because each site has different geology, terrain, conditions that make it difficult to replicate an idea from one site to another.</p>
-
-              <p>“There's the politics behind it,” Furi said. “It's risk management, assessing what is the risk for testing and putting that capital behind these and changing regulation.”</p>
-
-              <p>EPA allocates about $1 billion to Superfund each year. In 2019, about $849,000 were spent on cleanups.</p>
-
-              <p>“They spent some money diverting drainage around, buying waste piles, but it’s unclear whether that’s made any difference whatsoever,” Butler said. “They have spent a lot of money doing studies there, whether or not those studies are really going to get them to a solution is a little unclear.”</p>
-
-              <p>Having such a large mining district that includes 48 mines makes cleanup projects go slower, as some smaller sites could have taken a few thousand dollars to be cleaned up.</p>
-
-              <p>Superfund sites also require finding responsible parties to pay for cleanups. “The unfortunate thing about all this is there's a lot of money being spent in the legal end of things,” Terry Morris, a former engineer at Sunnyside Gold and a CAG member said. “In the 90s when I was here, the Animas Stakeholders group was little by little taking care of things that the local population deemed helpful, and then with the Superfund, it became a bureaucracy.”</p>
-
-              <p>The 2015 spill wasn’t the first incident. In 1978, the high alpine lake, Lake Emma, located about 12,000 feet high, crashed through the Sunnyside Mine where Morris was working. It blasted out the mine portal and turned the river black all the way down into New Mexico. It did kill all the fish, shut down the mine for at least two years.</p>
-
-              <p>Since then, a lot of cleanups have happened, especially starting in the 1990s. Yet, the largest acid draining mines still need to be cleaned up.</p>
-
-              <p>“There's still some things to learn we don't fully understand, the mine pool underneath the Superfund site and how all the mines are connected and all springs are connected across the different watersheds in the Upper Animas for example,” Roberts said. “We don't know exactly how the fractures and mine tunnels interact,” he said. “The geology is complex, so there's lots of fractures that intersect mine tunnels.”</p>
-
-              <p>Roberts is now researching how these cleanup efforts may need to adjust to climate change.</p>
-
-              <p>“Especially with increasing frequency of drought, a lot of these river levels are lower and that may mean that mine drainage may be a larger contribution to the surface water and thus metal concentrations are higher,” Roberts said. “Or it may mean that less water from snowmelt makes it into the mines and there may be less mind drainage in the future.”</p>
-
-              <p>Either way, it definitely has implications for water treatment moving forward, he said, and how the success of remediation should be measured.</p>
-
-            </div>
-          </div>
-        
-    </section>
-     <!-- CREEDE -->
+      
+    <!-- WTP Maps section -->
     
+    <div  class="scroll-graphic container-fluid position-relative">
+      
+      
+      <div id="wtp_map" class="row justify-content-center d-flex flex-column align-items-center lozad"
+      data-background-image-set="
+          url('assets/assetsthesisabandonedmines/WTP_map.jpg') 3x, 
+          url('assets/assetsthesisabandonedmines/WTP_map@0.5x.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/WTP_map@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+            <p class="text_wtp p-4">Since October 2015, discharge from the Gold King Mine has been collected and treated at this 1.5 million interim treatment plant in Gladstone.</p>
+        </div>
+      </div>
+           
+        
+      <div id="wtp_1" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+      data-background-image-set="
+          url('assets/assetsthesisabandonedmines/WTP_1.jpg') 3x, 
+          url('assets/assetsthesisabandonedmines/WTP_1@0.5x.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/WTP_1@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 me-sm-5 story spread-out">
+          <p class="text_wtp p-4">According to the EPA, approximately 800 million gallons of Gold King mine water had been treated as of June 2018.</p>
+        </div>
+      </div>
+      
+      
+      <div id ="wtp_2" class="row justify-content-center align-items-center align-items-sm-start d-flex flex-column lozad"
+      data-background-image-set="
+          url('assets/assetsthesisabandonedmines/WTP_2.jpg') 3x, 
+          url('assets/assetsthesisabandonedmines/WTP_2@0.5x.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/WTP_2@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 offset-sm-1 story spread-out">
+          <p class="text_wtp p-4">The water treatment plant uses limestone to neutralize the acidity of the water. </p>
+        </div>
+      </div>
+           
+      
+      <div id="wtp_3" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad" 
+      data-background-image-set="
+          url('assets/assetsthesisabandonedmines/WTP_3.jpg') 3x, 
+          url('assets/assetsthesisabandonedmines/WTP_3@0.5x.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/WTP_3@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out">
+          <p class="text_wtp p-4">The process produces 4,600 cubic yards of sludge a year, which are being managed at that location.</p>
+        </div>
+      </div>
+           
+      
+      <div id= "wtp_4" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+      data-background-image-set="
+          url('assets/assetsthesisabandonedmines/WTP_4.jpg') 3x, 
+          url('assets/assetsthesisabandonedmines/WTP_4@0.5x.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/WTP_4@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out">
+          <p class="text_wtp p-4">But the storage capacity is limited, and the EPA has been exploring other locations to manage the sludge. </p>
+        </div>    
+      </div>
+      
+    </div><!-- close .container-fluid -->
+  
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p>“Right now, we have to rely on a lime treatment plant, but the reality is that's only treating one mine — and there are 48 mining or mining-related sites in this district,” Michelle Furi, the Mountain Studies Institute’s deputy director said. “It's really not tackling the problem, it’s barely even touching it.”</p>
+
+          <p>MSI encourages innovation in mine cleanups.</p>
+
+          <p>“Unfortunately, what we have right now is that sort of dinosaur of a lime treatment plant,” Furi said.</p>
+
+          <p>Treatment plants are costly because they require at least $1 million a year to run without any end in sight. The limestone needs to be mined elsewhere — for the Gladstone treatment plant, lime is mined in Monarch pass, about 165 miles away.</p>
+
+          <p>“They [treatment plants] create this cumbersome byproduct of the sludge that then has to be dried out, then it has to be trucked and stored permanently somewhere else, and then capped,” Furi said. “The carbon footprint there is just astronomical.”</p>
+
+          <p>The two most common “solutions” to clean up mine sites are water treatment plans and bulkheads. The problem with bulkheads is that they usually regulate the flow, but they don’t stop the contamination from happening. Bulkheads help to change the chemistry of the water, as acidity occurs when oxygen is present. So as the tunnel fills up with water behind a bulkhead, oxygen disappears, which makes the water cleaner.</p>
+
+          <p>Before the spill in 2015, the EPA installed a bulkhead at Red &amp; Bonita the same year, but they didn’t close the valve until summer 2020. Then, they reopened the valve in September 2020 to drain down the impounded water behind the bulkhead. That water then goes to the Gladstone water treatment plant to be treated.</p>
+
+          <p>The experiment helps better understand the hydrology of the region.</p>
+
+          <p>MSI holds an annual innovation expo and a boot camp, which acts as an accelerator for startups. “There's a lot of technologies that are innovative from drones and robotics to bio cement,” Furi said.</p>
+
+          <p>But innovation has to overcome the lack of money and comply with a complex regulation framework.</p>
+
+          <p>“We see EPA really wanting to engage with that and looking for innovative technologies to incorporate them where they can in these sites,” Furi said. “We have a long way to go.”</p>
+
+          <p>Wetlands could be one of the possible solutions. In 2019, contractors for the Bureau of Land Management were finishing a constructed wetlands with an iron terrace at Elk Tunnel, which can act as natural filters to neutralize the acidity.</p>
+
+          <p>Electrocoagulation, which consists of injecting electricity into the water to remove heavy metals has also been attempted at the American Tunnel in 2012.</p>
+
+          <p>“One of the challenges, there, is the volume,” Furi said. Most innovative technologies were tested on small volumes of water, and often cannot handle the volume that a water treatment plant can.</p>
+
+          <p>But if most innovative solutions haven’t been implemented at a larger scale, it’s also because each site has different geology, terrain, conditions that make it difficult to replicate an idea from one site to another.</p>
+
+          <p>“There's the politics behind it,” Furi said. “It's risk management, assessing what is the risk for testing and putting that capital behind these and changing regulation.”</p>
+
+          <p>EPA allocates about $1 billion to Superfund each year. In 2019, about $849,000 were spent on cleanups.</p>
+
+          <p>“They spent some money diverting drainage around, buying waste piles, but it’s unclear whether that’s made any difference whatsoever,” Butler said. “They have spent a lot of money doing studies there, whether or not those studies are really going to get them to a solution is a little unclear.”</p>
+
+          <p>Having such a large mining district that includes 48 mines makes cleanup projects go slower, as some smaller sites could have taken a few thousand dollars to be cleaned up.</p>
+
+          <p>Superfund sites also require finding responsible parties to pay for cleanups. “The unfortunate thing about all this is there's a lot of money being spent in the legal end of things,” Terry Morris, a former engineer at Sunnyside Gold and a CAG member said. “In the 90s when I was here, the Animas Stakeholders group was little by little taking care of things that the local population deemed helpful, and then with the Superfund, it became a bureaucracy.”</p>
+
+          <p>The 2015 spill wasn’t the first incident. In 1978, the high alpine lake, Lake Emma, located about 12,000 feet high, crashed through the Sunnyside Mine where Morris was working. It blasted out the mine portal and turned the river black all the way down into New Mexico. It did kill all the fish, shut down the mine for at least two years.</p>
+
+          <p>Since then, a lot of cleanups have happened, especially starting in the 1990s. Yet, the largest acid draining mines still need to be cleaned up.</p>
+
+          <p>“There's still some things to learn we don't fully understand, the mine pool underneath the Superfund site and how all the mines are connected and all springs are connected across the different watersheds in the Upper Animas for example,” Roberts said. “We don't know exactly how the fractures and mine tunnels interact,” he said. “The geology is complex, so there's lots of fractures that intersect mine tunnels.”</p>
+
+          <p>Roberts is now researching how these cleanup efforts may need to adjust to climate change.</p>
+
+          <p>“Especially with increasing frequency of drought, a lot of these river levels are lower and that may mean that mine drainage may be a larger contribution to the surface water and thus metal concentrations are higher,” Roberts said. “Or it may mean that less water from snowmelt makes it into the mines and there may be less mind drainage in the future.”</p>
+
+          <p>Either way, it definitely has implications for water treatment moving forward, he said, and how the success of remediation should be measured.</p>
+
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
+    
+    
+    
+    
+     <!-- CREEDE -->
+    <div class="container-fluid">
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-10">
-          
-          <img class="img-fluid d-block" src="assets/assetsthesisabandonedmines/map_click_v2_creede.png">
-          
+          <!-- Map image -->
+          <img class="img-fluid d-block" src="assets/assetsthesisabandonedmines/map_click_v2_creede.png" alt="Map of creede">
        </div>
       </div>
+    </div>
     
-     <div class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center"> 
-      
-          <h1 id="creede" class="display-4 font-weight-bold">Creede:</h1>  
-        <h2 id="subcreede" class="display-5 font-weight-bold"> a Small Town Facing a Huge Problem</h2>
+    
+    
+    <div class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center position-relative vh-100 overflow-hidden"> 
+      <h1 id="creede" class="display-4 font-weight-bold">Creede:</h1>  
+      <h2 id="subcreede" class="display-5 font-weight-bold">A Small Town Facing a Huge Problem</h2>
        
+      <video id="creede_video" class="fullscreen-video lozad" muted loop playsinline autoplay data-poster="assets/creede_drone/creede_drone.jpg">
+        <source data-src="assets/creede_drone/playlist.m3u8" type="application/x-mpegURL">
+        <source data-src="assets/creede_drone/creede_drone.mp4" type="video/mp4">
+      </video>
+    </div>
    
     
-       <video id="creede_video" src="assets/assetsthesisabandonedmines/creede_drone_v3.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
-      
-              </div>
-   
-      <section class="container-fluid" role="main">
     
+    <div class="container" role="main">
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
        
-          <p> <span class ="firstcharacter">I</span>t’s a small store with a false wooden front, typical of the Old West. The front yard is strewed with rusty mine carts, sand and tram buckets, rocks, crystals, an old Coca Cola’s mini fridge, antiqued snowshoes, and a wooden tram tower. The store, “Mines & Memories,” is a symbol of the perpetuity of mines at the heart of Creede’s economy, whether it’s for tourists or for residents.</p>
+          <p> <span class ="firstcharacter">I</span>t’s a small store with a false wooden front, typical of the Old West. The front yard is strewed with rusty mine carts, sand and tram buckets, rocks, crystals, an old Coca Cola’s mini fridge, antiqued snowshoes, and a wooden tram tower. The store, “Mines &amp; Memories,” is a symbol of the perpetuity of mines at the heart of Creede’s economy, whether it’s for tourists or for residents.</p>
 
           <p>The pictures hanging all around Ken Wyley’s store show the annual Fourth of July competition that takes place over two days in Creede. Contestants get out and muck into a shaft bucket and drill.</p>
 
           <p>“The mining competition, it's something that gets in the blood of the damned miners,” Wyley said. “They’re like rodeo to a cowboy.”</p>
-          <br>
 
-        </div>
-
-      </div>
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
     
-        <img src="assets/assetsthesisabandonedmines/wyley.jpeg" class="img-fluid" alt="Picture of Ken Wyley">
     
-     <div class="row justify-content-center mt-5">
+    <!-- Key Wyley. Lazy loaded with multiple versions to speed up loading -->
+    <img class="lozad img-fluid" data-src="assets/assetsthesisabandonedmines/wyley@0.5x.jpg" 
+         data-srcset="
+            assets/assetsthesisabandonedmines/wyley.jpg 5760w,
+            assets/assetsthesisabandonedmines/wyley@0.75x.jpg 4320w,
+            assets/assetsthesisabandonedmines/wyley@0.5x.jpg 2880w,
+            assets/assetsthesisabandonedmines/wyley@0.25x.jpg 1440w,
+            assets/assetsthesisabandonedmines/wyley@0.1x.jpg 580w"
+         sizes="100vw"
+         alt="Picture of Ken Wyley">
+    
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
      
+          <p> But the mining past isn’t only reflected in the economy of the town of Creede, which counts 300-400 residents, but also in the water. Willow Creek, which flows across town, is highly contaminated with heavy metals from the abandoned mines located on the northern side of the town. </p>
+
+          <p>The Nelson Tunnel is responsible for most of the contamination as 365 gallons per minute on average flood out of the tunnel and into the creek. The tunnel was built to drain the water out of the underground workings of various nearby mines. About 48-50% of the contaminated water comes from the Nelson Tunnel and another mine, the Solomon Mine. The contamination makes the creek unable to support fish and benthic invertebrates bugs. </p>
+
+          <p>“The Nelson isn't the only problem, it's just the biggest,” Heather Greenwolf, the executive director of Headwaters Alliance, said. Headwaters Alliance is a nonprofit organization that works toward improving the watershed in Creede.</p>
+
+          <p>Since 2008, the tunnel and the Commodore Waste Rock Pile have been designated as a Superfund site. </p>
+
+          <p>Last fall, the EPA proposed an $11 million plan that would install bulkheads inside the Nelson tunnel to regulate the contaminated water flow and prevent the sudden release of 20 million gallons of impounded water. </p>
+
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
     
-     <p> But the mining past isn’t only reflected in the economy of the town of Creede, which counts 300-400 residents, but also in the water. Willow Creek, which flows across town, is highly contaminated with heavy metals from the abandoned mines located on the northern side of the town. </p>
-
-     <p>The Nelson Tunnel is responsible for most of the contamination as 365 gallons per minute on average flood out of the tunnel and into the creek. The tunnel was built to drain the water out of the underground workings of various nearby mines. About 48-50% of the contaminated water comes from the Nelson Tunnel and another mine, the Solomon Mine. The contamination makes the creek unable to support fish and benthic invertebrates bugs. </p>
-
-     <p>“The Nelson isn't the only problem, it's just the biggest,” Heather Greenwolf, the executive director of Headwaters Alliance, said. Headwaters Alliance is a nonprofit organization that works toward improving the watershed in Creede.</p>
-
-     <p>Since 2008, the tunnel and the Commodore Waste Rock Pile have been designated as a Superfund site. </p>
-
-     <p>Last fall, the EPA proposed an $11 million plan that would install bulkheads inside the Nelson tunnel to regulate the contaminated water flow and prevent the sudden release of 20 million gallons of impounded water. </p>
-          <br>
-
-          </div>
-
-      </div>
-        
-        
-        
-             <div class="row justify-content-center">
+    
+    <!-- EPA photos --->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/epa_1.jpeg" class="img-fluid" alt="Picture of EPA">
+          <img class="lozad img-fluid" data-src="assets/assetsthesisabandonedmines/epa_1@0.5x.jpg" 
+           data-srcset="
+              assets/assetsthesisabandonedmines/epa_1.jpg 4449w,
+              assets/assetsthesisabandonedmines/epa_1@0.75x.jpg 3338w,
+              assets/assetsthesisabandonedmines/epa_1@0.5x.jpg 2226w,
+              assets/assetsthesisabandonedmines/epa_1@0.25x.jpg 1113w,
+              assets/assetsthesisabandonedmines/epa_1@0.1x.jpg 450w"
+           sizes="50vw"
+           alt="Picture of EPA">
         </div>
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/epa_2.jpeg" class="img-fluid" alt="Picture of EPA">
+          <img class="lozad img-fluid" data-src="assets/assetsthesisabandonedmines/epa_1@0.5x.jpg" 
+           data-srcset="
+              assets/assetsthesisabandonedmines/epa_2.jpg 5760w,
+              assets/assetsthesisabandonedmines/epa_2@0.75x.jpg 4320w,
+              assets/assetsthesisabandonedmines/epa_2@0.5x.jpg 2880w,
+              assets/assetsthesisabandonedmines/epa_2@0.25x.jpg 1440w,
+              assets/assetsthesisabandonedmines/epa_2@0.1x.jpg 580w"
+           sizes="50vw"
+           alt="Picture of EPA">
+        </div><!-- close .col -->
+      </div><!-- close .row -->
+    </div><!-- close .container -->
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p>The goal is to avoid landslides, floods that could cause a fish kill in the Rio Grande River as the high rate flow would prevent the dilution of metals. But the project won’t improve the water quality.</p>
+        </div>
+      </div>
+    </div>
+        
+          
+    <div  class="scroll-graphic container-fluid position-relative">
+        
+      <div id="creede_map-s1" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+        data-background-image="assets/assetsthesisabandonedmines/creede_map-s1.jpg">
+        <div  class="graphic-text-box col-10 col-sm-6 col-md-4 me-sm-5 spread-out">
+            <p class="text_wtp p-4">This is Creede.</p>
         </div>
       </div>
       
-  <div class="row justify-content-center mt-5">
-        <div class="col-12 col-sm-8 col-md-6">
-
-     <p> The goal is to avoid landslides, floods that could cause a fish kill in the Rio Grande River as the high rate flow would prevent the dilution of metals. But the project won’t improve the water quality.</p>
-              
+      
+      <div id="creede_map-s2" class="row justify-content-center d-flex flex-column align-items-center-sm-end lozad"
+        data-background-image="assets/assetsthesisabandonedmines/creede_map-s2.jpg">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 offset-sm-1 spread-out">
+          <p class="text_wtp p-4">The acid mine drainage discharges coming from the mines and tunnels located to the north of Creede makes Willow Creek unable to sustain aquatic life.</p>
         </div>
-    </div>
-        
-          
-        <div  class="scroll-graphic container-fluid position-relative">
-        
-          
-          
-           <div  id="creede_map-s1" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div  class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-              <p id= "text_creede_map" data-image="assets/assetsthesisabandonedmines/creede_map-s1.png"> This is Creede. </p>
-          </div>
-        </div>
-        <div id="creede_map-s2" class="row justify-content-center d-flex flex-column align-items-center-sm-end">
-          <div  class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-              <p  id= "text_wtp"  data-image="assets/assetsthesisabandonedmines/creede_map-s2.png"> The acid mine drainage discharges coming from the mines and tunnels located to the north of Creede makes Willow Creek unable to sustain aquatic life.  </p>
-          </div>
-        </div>
+      </div>
+      
     
-      <div id="creede_map-s3" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p   id= "text_wtp"  data-image="assets/assetsthesisabandonedmines/creede_map-s3.png">But as the water reaches the Rio Grande River, metals are being diluted, which makes the Rio Grande River suitable for fish habitat. </p>
-          </div>
+      <div id="creede_map-s3" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+        data-background-image="assets/assetsthesisabandonedmines/creede_map-s3.jpg">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 me-sm-5">
+          <p class="spread-out text_wtp p-4">But as the water reaches the Rio Grande River, metals are being diluted, which makes the Rio Grande River suitable for fish habitat.</p>
+          <p class="spread-out text_wtp p-4">Yet Willow Creek is the single source of zinc into the Rio Grande.</p>
         </div>
-
+      </div>
+    
+    </div><!-- close .container-fluid -->
         
-        <div id="creede_map-s3"class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div  class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p   id= "text_ott"   data-image="assets/assetsthesisabandonedmines/creede_map-s3.png">Yet Willow Creek is the single source of zinc into the Rio Grande.  </p>
-          </div>
-        </div>
-</div>
-        
-       
-    <div class="row justify-content-center mt-5">
+    <div class="container">
+      
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">      
-        <p>Before the sites became a Superfund site, the Willow Creek Reclamation Committee (WCRC), a community-led organization formed in 1997, was working on mine cleanups. Since 2016, the WCRC has merged with Headwaters Alliance, which has taken over communications between the EPA and the community and environmental projects.</p>
+          <p>Before the sites became a Superfund site, the Willow Creek Reclamation Committee (WCRC), a community-led organization formed in 1997, was working on mine cleanups. Since 2016, the WCRC has merged with Headwaters Alliance, which has taken over communications between the EPA and the community and environmental projects.</p>
 
-        <p>But like other community groups, including the Animas River Stakeholder Group in Durango and Silverton, the WCRC hit a wall when it came to clean up sites that have acid mine drainage discharge, like the Nelson Tunnel, as they would become liable under the Clean Water Act as soon as they start clean up such site.</p>
-           </div>
+          <p>But like other community groups, including the Animas River Stakeholder Group in Durango and Silverton, the WCRC hit a wall when it came to clean up sites that have acid mine drainage discharge, like the Nelson Tunnel, as they would become liable under the Clean Water Act as soon as they start clean up such site.</p>
+        </div>
+      </div>
     </div>
         
-  <div id="flood" class="scroll-graphic container-fluid position-relative">
+    <div id="flood" class="scroll-graphic container-fluid position-relative lozad" 
+      data-background-image-set="
+        url('assets/assetsthesisabandonedmines/flood_v2.jpg') 3x, 
+        url('assets/assetsthesisabandonedmines/flood_v2@0.5x.jpg') 2x,
+        url('assets/assetsthesisabandonedmines/flood_v2@0.25x.jpg') 1x">
         
-        <div  class="row justify-content-center d-flex flex-column align-items-center">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-              <p  data-image="assets/assetsthesisabandonedmines/flood_v2.png"> In 2005, the Commodore Waste Rock Pile collapsed and washed out into West Willow Creek due to a 20-year flood event. </p>
-          </div>
+      <div class="row justify-content-center d-flex flex-column align-items-center">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+          <p class="text_wtp p-4">In 2005, the Commodore Waste Rock Pile collapsed and washed out into West Willow Creek due to a 20-year flood event. </p>
         </div>
+      </div>
+        
+      <div class="row justify-content-center d-flex flex-column align-items-end">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 me-sm-5 spread-out">
+          <p class="text_wtp p-4">The Bachelor road that leads to the mines was washed out. </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center d-flex flex-column align-items-start">
+        <div class="graphic-text-box col-10 col-sm-6 offset-sm-1 col-md-4 spread-out">
+          <p class="text_wtp p-4">“It was a big mess,” Zeke Ward, the former WCRC chairman, said. “For about a week, they (the county) had to continually remove that material from the creek to keep the water from getting out.”</p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center flex-column align-items-center">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+          <p class="text_wtp p-4">The county’s goal was to contain the incident by keeping the water flowing through the flume, which was built in 1911 to maintain the creek’s water flow as the town was built in a floodplain.</p>
+        </div>
+      </div>
+        
+    </div><!-- close .container-fluid -->
+        
     
-      <div class="row d-flex flex-column justify-content-center align-items-center">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/flood_v2.png">The Bachelor road that leads to the mines was washed out. </p>
-          </div>
-        </div>
-
-        
-        <div class="row d-flex flex-column justify-content-center align-items-center">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/flood_v2.png">“It was a big mess,” Zeke Ward, the former WCRC chairman, said. “For about a week, they (the county) had to continually remove that material from the creek to keep the water from getting out.” </p>
-          </div>
-        </div>
-
-        <div class="row d-flex justify-content-center flex-column align-items-center">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/flood_v2.png">The county’s goal was to contain the incident by keeping the water flowing through the flume, which was built in 1911 to maintain the creek’s water flow as the town was built in a floodplain.</p>
-          </div>
-        </div>
-        
-        </div>
-        
-        <div class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-8 col-md-6">
-
-
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5 mb-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          
             <p> After the 2005 incident, the EPA suggested that the area become a Superfund site. But the community didn’t want a large designation, instead they wanted the Superfund site to be kept small. The EPA decided to limit the Superfund site designation to the Nelson tunnel and Commodore Waste Rock Pile. </p>
 
             <p>Before mining, the Ute tribe inhabited the area. Then, in the mid and late 19th century, settlers and tourists came to fish and enjoy the hot springs and the Ute were forced out of the Creede area. Then, in the 1890s, the town boomed with silver mining. </p>
 
           </div>
         </div>
-        
-                <div class="row justify-content-center">
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row justify-content-center">
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/old_p1892.jpeg" class="img-fluid" alt="Old picture">
+          <img class="lozad img-fluid" data-src="assets/assetsthesisabandonedmines/old_p1892.jpg" 
+           data-srcset="
+              assets/assetsthesisabandonedmines/old_p1892.jpg 2837w,
+              assets/assetsthesisabandonedmines/old_p1892@0.75x.jpg 2128w,
+              assets/assetsthesisabandonedmines/old_p1892@0.5x.jpg 1420w,
+              assets/assetsthesisabandonedmines/old_p1892@0.25x.jpg 709w,
+              assets/assetsthesisabandonedmines/old_p1892@0.1x.jpg 280w"
+           sizes="50vw"
+           alt="Old picture of miners">
         </div>
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/old_p1918.jpeg" class="img-fluid" alt="Old picture">
+          <img class="lozad img-fluid" data-src="assets/assetsthesisabandonedmines/old_p1918.jpg" 
+           data-srcset="
+              assets/assetsthesisabandonedmines/old_p1918.jpg 2739w,
+              assets/assetsthesisabandonedmines/old_p1918@0.75x.jpg 2055w,
+              assets/assetsthesisabandonedmines/old_p1918@0.5x.jpg 1370w,
+              assets/assetsthesisabandonedmines/old_p1918@0.25x.jpg 684w,
+              assets/assetsthesisabandonedmines/old_p1918@0.1x.jpg 270w"
+           sizes="50vw"
+           alt="Old picture of miners">
         </div>
       </div>
+    </div><!-- close .container-fluid -->
       
-            <div class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-8 col-md-6">
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
 
+          <p>But at the time mining waste was easily dumped into the river. </p>
 
-            <p>   But at the time mining waste was easily dumped into the river. </p>
+          <p>“It's only in the last 30 years that people have started paying attention,” said Wyley, former miner and the Mines &amp; Memories store owner. </p>
 
-            <p>“It's only in the last 30 years that people have started paying attention,” said Wyley, former miner and the Mines & Memories store owner. </p>
-
-          </div>
         </div>
-      <div id="mines" class="scroll-graphic container-fluid position-relative">
-            <div id="amethyst" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/amethyst.png">The WCRC, when it was still around, removed contaminated material at the Amethyst 5 Mine, and did an impound on site, and capped it. This improved the water quality and fish returned to the creek, Ward said.  </p>
-          </div>
-        </div>
-
-        <div id="solomon" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/solomon.png">
-The second main polluter in Creede is the Solomon Mine, which releases cadmium, zinc and lead into the creek, but isn't listed as a Superfund site. </p>
-          </div>
-        </div>
-        
-        </div>
-        
-            <div class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-8 col-md-6">
-
-
-            <p>    “We don't want the EPA to list the Solomon, but at the same time we know nobody can touch that until there is a Good Samaritan Law for abandoned mines lands in place,” Greenwolf said. 
-</p>
-
-            <p>Stabilization work took place in the past at the Solomon Mine to make sure waste rocks don’t fall into the creek. “But that doesn’t stop water from touching them and going through them, and leeching,” Alex Handloff who works with Greenwolf said as Headwaters Alliance’s development and engagement coordinator. “What's the long-term solution like?”</p>
-
-          </div>
-        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div id="mines" class="scroll-graphic container-fluid position-relative">
       
-        <div id="nelson" class="scroll-graphic container-fluid position-relative">
-            <div id="superfund" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/amethyst.png">In 2008, the Nelson Tunnel and the Commodore Waste Rock Pile were designated as Superfund sites. </p>
-          </div>
+      <div id="amethyst" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+          data-background-image="assets/assetsthesisabandonedmines/amethyst.jpg">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+          <p class="text_wtp p-4">The WCRC, when it was still around, removed contaminated material at the Amethyst 5 Mine, and did an impound on site, and capped it. This improved the water quality and fish returned to the creek, Ward said.</p>
         </div>
+      </div>
 
-        <div id="pile" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/solomon.png">
-Between 2008-2010, the Commodore Waste Rock Pile was stabilized, and mine waste was removed from West Willow Creek.  </p>
-          </div>
+      <div id="solomon" class="row justify-content-center align-items-center align-items-sm-start d-flex flex-column lozad"
+          data-background-image="assets/assetsthesisabandonedmines/solomon.jpg">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 offset-sm-1 spread-out">
+          <p class="text_wtp p-4">The second main polluter in Creede is the Solomon Mine, which releases cadmium, zinc and lead into the creek, but isn't listed as a Superfund site.</p>
         </div>
-          
-               <div id="map_access_nelson" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/solomon.png">
-The Nelson Tunnel still discharges copper, lead, zinc and cadmium, also called acid mine drainage discharges.  </p>
-          </div>
+      </div>
+        
+    </div>
+        
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p>“We don't want the EPA to list the Solomon, but at the same time we know nobody can touch that until there is a Good Samaritan Law for abandoned mines lands in place,” Greenwolf said.</p>
+
+          <p>Stabilization work took place in the past at the Solomon Mine to make sure waste rocks don’t fall into the creek. “But that doesn’t stop water from touching them and going through them, and leeching,” Alex Handloff who works with Greenwolf said as Headwaters Alliance’s development and engagement coordinator. “What's the long-term solution like?”</p>
         </div>
-          
-               <div id="nelson_tunnel" class="row justify-content-center d-flex flex-column align-items-center-sm-end">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/solomon.png">
-The Nelson Tunnel portal collapsed.   </p>
-          </div>
+      </div>
+    </div>
+      
+    
+    
+     <div class="scroll-graphic container-fluid position-relative">
+       
+       <div id="superfund" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+           data-background-image-set="
+                url('assets/assetsthesisabandonedmines/creede_mines/nelson_tunnel_sf.jpg') 2x,
+                url('assets/assetsthesisabandonedmines/creede_mines/nelson_tunnel_sf@0.5x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+          <p class="text_wtp p-4">In 2008, the Nelson Tunnel and the Commodore Waste Rock Pile were designated as Superfund sites. </p>
         </div>
+      </div>
+       
+
+      <div id="pile" class="row justify-content-center align-items-center align-items-sm-start d-flex flex-column lozad"
+           data-background-image-set="
+              url('assets/assetsthesisabandonedmines/creede_mines/commodore_pile.jpg') 2x,
+              url('assets/assetsthesisabandonedmines/creede_mines/commodore_pile@0.5x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 offset-sm-1 spread-out">
+          <p class="text_wtp p-4">Between 2008-2010, the Commodore Waste Rock Pile was stabilized, and mine waste was removed from West Willow Creek.</p>
+        </div>
+      </div>
+       
           
-                 <div id="map_access_commodore" class="row justify-content-center d-flex flex-column align-items-center-sm-end">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-                 <p  data-image="assets/assetsthesisabandonedmines/solomon.png">
-The only way for the EPA to gain access is to use the Commodore Level 5.   </p>  </div>
-          </div>
+      <div id="map_access_nelson" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+           data-background-image-set="
+              url('assets/assetsthesisabandonedmines/creede_mines/nelson_collapsed.jpg') 2x,
+              url('assets/assetsthesisabandonedmines/creede_mines/nelson_collapsed@0.5x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 me-sm-5 spread-out">
+          <p class="text_wtp p-4">The Nelson Tunnel still discharges copper, lead, zinc and cadmium, also called acid mine drainage discharges.</p>
+        </div>
+      </div>
+          
+      
+      <div id="nelson_tunnel" class="row justify-content-center d-flex flex-column align-items-center-sm-end lozad"
+          data-background-image="assets/assetsthesisabandonedmines/creede_mines/collapsed.jpg">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 offset-sm-1 spread-out">
+          <p class="text_wtp p-4">The Nelson Tunnel portal collapsed.</p>
+        </div>
+      </div>
+          
+      <div id="map_access_commodore" class="row justify-content-center d-flex flex-column align-items-center-sm-end lozad"
+          data-background-image-set="
+              url('assets/assetsthesisabandonedmines/commodore_access.jpg') 2x,
+              url('assets/assetsthesisabandonedmines/commodore_access@0.5x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 offset-sm-1 spread-out">
+          <p class="text_wtp p-4">The only way for the EPA to gain access is to use the Commodore Level 5.</p>  
+        </div>
+      </div>
+       
+    </div><!-- close .container -->
           
             
        
-          <img class="img-fluid d-block" src="assets/assetsthesisabandonedmines/creede_mines/commodore.jpeg">
+    <img class="lozad img-fluid d-block my-5" data-src="assets/assetsthesisabandonedmines/creede_mines/commodore.jpg" 
+     data-srcset="
+        assets/assetsthesisabandonedmines/creede_mines/commodore.jpg 5760w,
+        assets/assetsthesisabandonedmines/creede_mines/commodore@0.75x.jpg 4320w,
+        assets/assetsthesisabandonedmines/creede_mines/commodore@0.5x.jpg 2880w,
+        assets/assetsthesisabandonedmines/creede_mines/commodore@0.25x.jpg 1440w,
+        assets/assetsthesisabandonedmines/creede_mines/commodore@0.1x.jpg 580w"
+     sizes="100vw"
+     alt="Commodore mine">
         
          
+    <video class="lozad" muted loop playsinline autoplay width="100%" height="100%" data-poster="assets/assetsthesisabandonedmines/creede_mines/tunnels_5.jpg">
+      <source src="assets/assetsthesisabandonedmines/creede_mines/tunnels_5.mp4" type="video/mp4">
+    </video>
+    
+    
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-8 col-md-6">
+          <p>The EPA cleaned up and stabilized the Commodore Level 5 Tunnel, which allows them to get access to the Nelson Tunnel. </p>
+          <p>But the lifespan of their work is only ten years, Greenwolf said.</p>
         </div>
-        
-        
-         <video src="assets/assetsthesisabandonedmines/creede_mines/tunnels_5.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
-        <p>The EPA cleaned up and stabilized the Commodore Level 5 Tunnel, which allows them to get access to the Nelson Tunnel. </p>
-        <p>But the lifespan of their work is only ten years, Greenwolf said.
-        </p>
-        
-       <div class="row justify-content-center position-relative">
-        <canvas class="mine-video"></canvas>
       </div>
-
-         <video src="assets/assetsthesisabandonedmines/water_creede.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
-        <p>West Willow Creek, which is heavily contaminated by the Nelson Tunnel, merged with East Willow Creek, less polluted.
- </p>
+    </div>
         
-         <div id="town" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div id="text_flood" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-            <p  data-image="assets/assetsthesisabandonedmines/creede_mines/water_town.jpeg">The contamination is being diluted, but it’s still very high as it keeps flowing across town.
-        </p>    </div>
+
+
+    <video class="lozad" muted loop playsinline autoplay width="100%" height="100%" data-poster="assets/water_creede/water_creede.jpg">
+      <source src="assets/water_creede/playlist.m3u8" type="application/x-mpegURL">
+      <source src="assets/water_creede/water_creede.mp4" type="video/mp4">
+    </video>
+    
+    
+    
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-8 col-md-6">
+          <p>West Willow Creek, which is heavily contaminated by the Nelson Tunnel, merged with East Willow Creek, less polluted.</p>
         </div>
+      </div>
+    </div>
         
+    
+    <div class="container-fluid">
+      <div id="town" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column lozad"
+        data-background-image-set="
+            url('assets/assetsthesisabandonedmines/creede_mines/water_town.jpg') 2x,
+            url('assets/assetsthesisabandonedmines/creede_mines/water_town@0.5x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+          <p class="text_wtp p-4">The contamination is being diluted, but it’s still very high as it keeps flowing across town.</p>
+        </div>
+      </div>
+    </div>
         
-            <div class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-8 col-md-6">
-
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
         
-        <p>As time goes by, it's hard for Headwaters Alliance to sustain interest. “There’s a lot of people in our community who care that there's a Superfund site but we don't have anybody beating drums because it isn't going to go anywhere,” Greenwolf said.</p>
+          <p>As time goes by, it's hard for Headwaters Alliance to sustain interest. “There’s a lot of people in our community who care that there's a Superfund site but we don't have anybody beating drums because it isn't going to go anywhere,” Greenwolf said.</p>
 
-        <p>Ward, of the now disbanded WCRC, agreed with this sentiment.
-        “When you’re volunteering your time, roadblocks can seem insurmountable. People want to do something, but it becomes a little bit difficult to maintain interest (over time),” said Ward.</p>
+          <p>Ward, of the now disbanded WCRC, agreed with this sentiment.
+          “When you’re volunteering your time, roadblocks can seem insurmountable. People want to do something, but it becomes a little bit difficult to maintain interest (over time),” said Ward.</p>
 
-        <p>“The six miles of Willow Creek that has been impacted by historic mining activity is not even a blip on the radar screen, but it's close to town,” Ward said. And the hope, he said, is that one day Willow Creek will add recreational opportunities to the town.</p>
+          <p>“The six miles of Willow Creek that has been impacted by historic mining activity is not even a blip on the radar screen, but it's close to town,” Ward said. And the hope, he said, is that one day Willow Creek will add recreational opportunities to the town.</p>
             
-              </div>
         </div>
-        
-             <img src="assets/assetsthesisabandonedmines/ward.jpeg" class="img-fluid" alt="Picture of Ward">
-
-        
-         <div class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-8 col-md-6">
-
-        
-        <p>
-In the upper watershed of East Willow Creek, above the Solomon mine, there are good fishing populations and higher levels of benthic  invertebrates. 
-</p>
-
-        <p>“We just did benthic sampling on five sites in the whole watershed,” Greenwolf said. “Everything above the Nelson and everything above the Solomon was within normal limits.” </p>
-
-        <p>This indicates that before mining, fish were there, Greenwold said.
-</p>
-         <p>“There's a whole trophic effect that happens,” Greenwolf said. The lack of fish leads to a lack of birds. The resulting absence of vegetation, especially lower in the floodplain, is also a barrier to habitat.
-</p>
-           </div>
-           
-        </div>
-        
-           <div class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-8 col-md-6">
-
-    
-            <h3>Expensive repairs for a small town</h3><br>
-
-<p>Another issue regarding the legacy of mining is the impact on the town’s sewage system, which has reported high levels of heavy metals at the water treatment plant. </p>
-
-<p>A 2019 commissioned study by the town explains that Willow Creek, which contains heavy metals, like zinc and cadmium, may have contaminated the groundwater. The groundwater then infiltrates the cracked sewer pipes, which then reaches the water treatment plant. The levels of metal in the sewage system at Creede’s water treatment plant exceeds the state’s limitations. CDPHE has approached the town and issued notices of violations. They asked the town to repair the pipes to meet water standards. </p>
-
-             
-              </div>
-        </div>
-        
-        
-         <img src="assets/assetsthesisabandonedmines/sewage.jpeg" class="img-fluid" alt="Picture of sewage treatment plant">
-    
-        
-          <div class="row justify-content-center mt-5">
-            <div class="col-12 col-sm-8 col-md-6">
-
-
-              <p>
-                Creede has been trying to solve this issue for several years. The town is planning to start to repair the pipes next summer, but the price tag is high. </p>
-
-              <p>The town has asked the EPA for help, Barry Steinberg, the town’s lawyer, said. But “the EPA’s focus is on stopping another catastrophic event, but that doesn't stop the acid mine drainage from continuing to seep and run down to us,” Steinberg said.</p>
-
-              <p>To repair the pipes, it would cost XXXX to the town, which is seeking financial assistance and has asked Colorado’s Department of Local Affairs for grants. But Louis Fineberg, the town’s manager, thinks the DLA’s money won’t be enough. </p>
-
-              <p>“Creede is a small place, and the people here are not wealthy, and they're being asked to do a very large project that really was not (theirs),” Fineberg said. “Creede is very dependent on its summer tourists, and a big part of that revolves around water quality because people are out there fishing, and if that goes away then Creede is really in trouble.”</p>
-
-              <p>From 2017 to 2020, the EPA and Pioneer, which conducted mining operations in Creede from 1983 to 1989, engaged in extensive litigation to cover the cost of the cleanups. In September 2020, Pioneer finally signed a consent decree with the EPA that will make Pioneer pay nearly $5.8 million to the EPA for the cleanup at the Superfund site. </p>
-              
-              
-            </div>
-        </div>
-   <div class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-8 col-md-6">
-
-              <h3>Saving Creede’s mining heritage</h3>
-            <br>
-
-              <p>While driving up in the mountains, along the Bachelor Loop, the main tourist attraction of Creede, the former towns of Bachelor and Weaver have now disappeared. Most structures that were built in spruce rotted and nowadays only large open fields are left. </p>
-
-              <p>Most towns were built very close to the mines because access was difficult. With the construction of the Nelson Tunnel, it made access easier for the miners who worked at the Amethyst mine. They were now able to live downtown and use the tunnel to access their workplace. </p>
-              <p>Only the ore houses near the Nelson Tunnel are still visible. But the structures are becoming brittle. </p>
-
-            </div>
-          </div>
-
-            <div class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center"> 
-      
-  
-     <video src="assets/assetsthesisabandonedmines/ore.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
-      
       </div>
+    </div>
         
-          <div class="row justify-content-center mt-5">
-            <div class="col-12 col-sm-8 col-md-6">
+    
+    <!-- Ward picture -->
+    <img class="lozad img-fluid d-block my-5" data-src="assets/assetsthesisabandonedmines/ward.jpg" 
+     data-srcset="
+        assets/assetsthesisabandonedmines/ward.jpg 3607w,
+        assets/assetsthesisabandonedmines/ward@0.75x.jpg 2706w,
+        assets/assetsthesisabandonedmines/ward@0.5x.jpg 1804w,
+        assets/assetsthesisabandonedmines/ward@0.25x.jpg 904w,
+        assets/assetsthesisabandonedmines/ward@0.1x.jpg 360w"
+     sizes="100vw"
+     alt="Picture of Ward">
+    
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p>In the upper watershed of East Willow Creek, above the Solomon mine, there are good fishing populations and higher levels of benthic  invertebrates.</p>
 
+          <p>“We just did benthic sampling on five sites in the whole watershed,” Greenwolf said. “Everything above the Nelson and everything above the Solomon was within normal limits.” </p>
 
-              <p>
-                Recently, Mineral County has been working with the EPA to become the landowners of the Superfund site, which will include the ore houses. </p>
+          <p>This indicates that before mining, fish were there, Greenwold said.</p>
+          
+          <p>“There's a whole trophic effect that happens,” Greenwolf said. The lack of fish leads to a lack of birds. The resulting absence of vegetation, especially lower in the floodplain, is also a barrier to habitat.</p>
 
-              <p>The county’s administrator, Janelle Kukuk, said the properties will be donated to Mineral County so they can rehabilitate the structures and keep that mining heritage intact. Mineral County will become the owners of the Nelson Tunnel and Commodore Level 5, which currently are privately owned. The goal for EPA is to eliminate the current land owner’s liability, but it wouldn’t transfer the liability to the county. </p>
+          <h3 class="mt-5 mb-3">Expensive repairs for a small town</h3>
 
-              <p>“It's important for us to maintain that iconic set of structures and make it something that does go into perpetuity,” Kukuk said. “One of the buildings, if it stays standing for another 18 months, we're going to be really really lucky. We’re hoping we can get in there before it truly does fall off the side of the mountain.”</p>
+          <p>Another issue regarding the legacy of mining is the impact on the town’s sewage system, which has reported high levels of heavy metals at the water treatment plant. </p>
 
-              <p>Kukuk came to Creede in 1984 to work at Homestake Mine as an accounts payable clerk. She worked for about eight months before the mine closed down. It took a decade, she said, before Creede could transition to a tourist town. </p>
-            </div>
+          <p>A 2019 commissioned study by the town explains that Willow Creek, which contains heavy metals, like zinc and cadmium, may have contaminated the groundwater. The groundwater then infiltrates the cracked sewer pipes, which then reaches the water treatment plant. The levels of metal in the sewage system at Creede’s water treatment plant exceeds the state’s limitations. CDPHE has approached the town and issued notices of violations. They asked the town to repair the pipes to meet water standards. </p>
+   
         </div>
-
- <div id="trailer" class="scroll-graphic container-fluid position-relative">
- 
-   <div  class="row justify-content-center d-flex flex-column align-items-center">
-      <div id="text_wtp" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-  
-<p data-image="assets/assetsthesisabandonedmines/trailer_park.jpeg">The mining legacy also affects the housing market. Miners were used to moving a lot, so they didn’t want to make an investment in a home,  which created the trailer parks on the south end of town. </p>
-     </div>
-   </div>
-         <div  class="row justify-content-center d-flex flex-column align-items-center">
-      <div id="text_wtp" class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-<p data-image="assets/assetsthesisabandonedmines/trailer_park.jpeg">“We don’t have a good housing market,” Kukuk said. “No one's kept up the trailer parks, they've kind of degraded into, they're still livable, but they're not necessarily attractive.”
-</p>
-       
+      </div>
+    </div>
         
-     
-          </div>
+    
+    <!-- Sewage Picture -->
+    <img class="lozad img-fluid d-block my-5" data-src="assets/assetsthesisabandonedmines/sewage.jpg" 
+     data-srcset="
+        assets/assetsthesisabandonedmines/sewage.jpg 5760w,
+        assets/assetsthesisabandonedmines/sewage@0.75x.jpg 4320w,
+        assets/assetsthesisabandonedmines/sewage@0.5x.jpg 2880w,
+        assets/assetsthesisabandonedmines/sewage@0.25x.jpg 1440w,
+        assets/assetsthesisabandonedmines/sewage@0.1x.jpg 580w"
+     sizes="100vw"
+     alt="Picture of sewage treatment plant">
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+
+          <p>Creede has been trying to solve this issue for several years. The town is planning to start to repair the pipes next summer, but the price tag is high. </p>
+
+          <p>The town has asked the EPA for help, Barry Steinberg, the town’s lawyer, said. But “the EPA’s focus is on stopping another catastrophic event, but that doesn't stop the acid mine drainage from continuing to seep and run down to us,” Steinberg said.</p>
+
+          <p>To repair the pipes, it would cost XXXX to the town, which is seeking financial assistance and has asked Colorado’s Department of Local Affairs for grants. But Louis Fineberg, the town’s manager, thinks the DLA’s money won’t be enough. </p>
+
+          <p>“Creede is a small place, and the people here are not wealthy, and they're being asked to do a very large project that really was not (theirs),” Fineberg said. “Creede is very dependent on its summer tourists, and a big part of that revolves around water quality because people are out there fishing, and if that goes away then Creede is really in trouble.”</p>
+
+          <p>From 2017 to 2020, the EPA and Pioneer, which conducted mining operations in Creede from 1983 to 1989, engaged in extensive litigation to cover the cost of the cleanups. In September 2020, Pioneer finally signed a consent decree with the EPA that will make Pioneer pay nearly $5.8 million to the EPA for the cleanup at the Superfund site. </p>
+                
+          <h3 class="mt-5 mb-3">Saving Creede’s mining heritage</h3>
+
+          <p>While driving up in the mountains, along the Bachelor Loop, the main tourist attraction of Creede, the former towns of Bachelor and Weaver have now disappeared. Most structures that were built in spruce rotted and nowadays only large open fields are left. </p>
+
+          <p>Most towns were built very close to the mines because access was difficult. With the construction of the Nelson Tunnel, it made access easier for the miners who worked at the Amethyst mine. They were now able to live downtown and use the tunnel to access their workplace. </p>
+          
+          <p>Only the ore houses near the Nelson Tunnel are still visible. But the structures are becoming brittle. </p>
+
         </div>
-        
-        </div>
-        
-        
-        
-              
-
-          <div class="row justify-content-center mt-5">
-            <div class="col-12 col-sm-8 col-md-6">
-
-
-              <h3>
-                Will mining come back? </h3>
-<br>
-              <p>
-                “There's this quiet potentiality that the EPA may work with Rio Grande Silver to give them permission to re-establish mining in Creede, and if they were to do that that would de-water the Nelson Tunnel, which would effectively solve the problem,” Greenwolf said.
-              </p>
-
-              <p>
-                Rio Grande Silver is the mining company Hecla’s wholly-owned subsidiary and owns the entire Creede Mining District. </p>
-
-              <p>An unpaved county road winds up the mountain to an incredible scenic overlook of the town, but also to the Bulldog Mine along with the Rio Grande Silver’s building. </p>
-            </div>
-          </div>
-        
-        
-          <div id="mcclure" class="scroll-graphic container-fluid position-relative">
-
-            <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-              <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-
-                <p id="text_mcclure" data-image="assets/assetsthesisabandonedmines/mcclure.jpeg">Randy McClure, a senior geologist from a family of longtime miners, is now managing Rio Grande Silver. </p>
-              </div>
-            </div>
-            <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-              <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
-                <p id="text_mcclure" data-image="assets/assetsthesisabandonedmines/mcclure.jpeg">
-                  This exploration and pre-development project works towards the return of mining in Creede.
-
-                </p>
-        
+      </div>
+    </div>
       
-     
-          </div>
+    
+    
+    <video class="lozad" muted loop playsinline autoplay width="100%" height="100%" data-poster="assets/ore/ore.jpg">
+      <source src="assets/ore/playlist.m3u8" type="application/x-mpegURL">
+      <source src="assets/ore/ore.mp4" type="video/mp4">
+    </video>
+      
+   
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p> Recently, Mineral County has been working with the EPA to become the landowners of the Superfund site, which will include the ore houses. </p>
+
+          <p>The county’s administrator, Janelle Kukuk, said the properties will be donated to Mineral County so they can rehabilitate the structures and keep that mining heritage intact. Mineral County will become the owners of the Nelson Tunnel and Commodore Level 5, which currently are privately owned. The goal for EPA is to eliminate the current land owner’s liability, but it wouldn’t transfer the liability to the county. </p>
+
+          <p>“It's important for us to maintain that iconic set of structures and make it something that does go into perpetuity,” Kukuk said. “One of the buildings, if it stays standing for another 18 months, we're going to be really really lucky. We’re hoping we can get in there before it truly does fall off the side of the mountain.”</p>
+
+          <p>Kukuk came to Creede in 1984 to work at Homestake Mine as an accounts payable clerk. She worked for about eight months before the mine closed down. It took a decade, she said, before Creede could transition to a tourist town. </p>
         </div>
+      </div>
+    </div>
+    
+    
+
+    <div id="trailer" class="scroll-graphic container-fluid position-relative lozad" 
+        data-background-image-set="
+          url('assets/assetsthesisabandonedmines/trailer_park.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/trailer_park@0.5x.jpg') 1x">
+                                                                                                                ">
+      <div  class="row justify-content-center d-flex flex-column align-items-start">
+        <div class="graphic-text-box col-10 col-sm-6 offset-sm-1 col-md-4 spread-out">
+          <p class="text_wtp p-4">The mining legacy also affects the housing market. Miners were used to moving a lot, so they didn’t want to make an investment in a home,  which created the trailer parks on the south end of town. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center d-flex flex-column align-items-start">
+        <div class="graphic-text-box col-10 col-sm-6 offset-sm-1 col-md-4 spread-out">
+          <p class="text_wtp p-4">“We don’t have a good housing market,” Kukuk said. “No one's kept up the trailer parks, they've kind of degraded into, they're still livable, but they're not necessarily attractive.”</p>
+        </div>
+      </div>
+    </div>
         
+        
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <h3>Will mining come back? </h3>
+          <p>“There's this quiet potentiality that the EPA may work with Rio Grande Silver to give them permission to re-establish mining in Creede, and if they were to do that that would de-water the Nelson Tunnel, which would effectively solve the problem,” Greenwolf said.</p>
+
+          <p>Rio Grande Silver is the mining company Hecla’s wholly-owned subsidiary and owns the entire Creede Mining District. </p>
+
+          <p>An unpaved county road winds up the mountain to an incredible scenic overlook of the town, but also to the Bulldog Mine along with the Rio Grande Silver’s building. </p>
         </div>
+      </div>
+    </div>
+        
+        
+    <div id="mcclure" class="scroll-graphic container-fluid position-relative lozad" 
+      data-background-image-set="
+          url('assets/assetsthesisabandonedmines/mcclure.jpg') 2x,
+          url('assets/assetsthesisabandonedmines/mcclure@0.5x.jpg') 1x">
+
+      <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out me-sm-5">
+          <p class="text_wtp p-4">Randy McClure, a senior geologist from a family of longtime miners, is now managing Rio Grande Silver. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out me-sm-5">
+          <p class="text_wtp p-4">This exploration and pre-development project works towards the return of mining in Creede.</p>
+        </div>
+      </div>  
+    </div>
         
     
-          <div class="row justify-content-center mt-5">
-            <div class="col-12 col-sm-8 col-md-6">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-8 col-md-6">
+          <p>The project used to be Homestead Mine Co., which mined the Bulldog Mine, and shut down in 1985. About ten years ago, Hecla came and bought the entire district through Rio Grande Silver. </p>
 
+          <p>  McClure explained that they’re now looking to reopen the mine as silver prices go up. They’re tackling several issues to avoid being sued and liable for water treatment in perpetuity.  </p>
 
-              <p>    
-        
-        
-                The project used to be Homestead Mine Co., which mined the Bulldog Mine, and shut down in 1985. About ten years ago, Hecla came and bought the entire district through Rio Grande Silver. </p>
+          <p>  “We have a reclamation plan in place,” McClure said. They intend to put the disturbance to the ground, cover it with topsoil and seeded with natural vegetation.</p>
 
-              <p>  McClure explained that they’re now looking to reopen the mine as silver prices go up. They’re tackling several issues to avoid being sued and liable for water treatment in perpetuity.  </p>
+          <p>  McClure said that the tunnels for the Bulldog Mine don’t have water coming out, unlike the Nelson Tunnel. </p>
 
-              <p>  “We have a reclamation plan in place,” McClure said. They intend to put the disturbance to the ground, cover it with topsoil and seeded with natural vegetation.</p>
+          <p> “Having a Superfund site next door definitely heightens everybody's awareness of what's going on,” McClure said. “The EPA in late 2019-2020 has changed and become more willing to work with us.”</p>
 
-              <p>  McClure said that the tunnels for the Bulldog Mine don’t have water coming out, unlike the Nelson Tunnel. </p>
+          <p>  When Homestead was operating, there was no water coming out of the Nelson Tunnel because they treated the water through their own treatment plant. But once they closed, water started to trickle out of the Nelson Tunnel again. </p>
 
-              <p> “Having a Superfund site next door definitely heightens everybody's awareness of what's going on,” McClure said. “The EPA in late 2019-2020 has changed and become more willing to work with us.”</p>
+          <p>  There is hope now that by reopening the Bulldog mine, it would solve the problem with the Nelson Tunnel.</p>
 
-              <p>  When Homestead was operating, there was no water coming out of the Nelson Tunnel because they treated the water through their own treatment plant. But once they closed, water started to trickle out of the Nelson Tunnel again. </p>
+          <p>  “We keep hoping that maybe Hecla would get something going,” said Wyley, former miner and the Mines &amp; Memories store owner. “That would bring prosperity to town, school systems would fill up with kids, businesses would grow, people would have jobs — although there's not that many miners left in Creede.”</p>
 
-              <p>  There is hope now that by reopening the Bulldog mine, it would solve the problem with the Nelson Tunnel.</p>
+          <p>  EPA AND HEADWATERS REACTIONS ON MINING COMING BACK</p>
 
-              <p>  “We keep hoping that maybe Hecla would get something going,” said Wyley, former miner and the Mines & Memories store owner. “That would bring prosperity to town, school systems would fill up with kids, businesses would grow, people would have jobs — although there's not that many miners left in Creede.”</p>
+          <p>  But nothing is never 100% guaranteed with water as it infiltrates through the smallest cracks. Mining tunnels have linked the different mines altogether, making the cleanup of the Nelson Tunnel complex.</p>
 
-              <p>  EPA AND HEADWATERS REACTIONS ON MINING COMING BACK</p>
+          <p>  “They had tunnels going everywhere, it’s just like ants digging a damn anthill,” Wyley said. </p>
 
-              <p>  But nothing is never 100% guaranteed with water as it infiltrates through the smallest cracks. Mining tunnels have linked the different mines altogether, making the cleanup of the Nelson Tunnel complex.</p>
-
-              <p>  “They had tunnels going everywhere, it’s just like ants digging a damn anthill,” Wyley said. </p>
-
-            </div>
         </div>
+      </div>
+    </div>
 
-      <!-- ASPEN -->
     
+    
+    <!-- ASPEN -->  
+    <div class="container">
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-10">
-          
           <img class="img-fluid d-block" src="assets/assetsthesisabandonedmines/map_click_v2_aspen.png">
-          
        </div>
       </div>
+    </div>
     
-         <div class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center"> 
-      
-          <h1 id="aspen" class="display-4 font-weight-bold">Aspen:</h1>  
+    
+    
+    
+    <div class="justify-content-center text-center font-weight-bold d-flex flex-column align-items-center position-relative vh-100 overflow-hidden"> 
+        <h1 id="aspen" class="display-4 font-weight-bold">Aspen:</h1>  
         <h2 id="subaspen" class="display-5 font-weight-bold"> Is a Cleanup Possible?</h2>
        
-   
-    
-       <video id="aspen_video" src="assets/assetsthesisabandonedmines/smuggler_2.mp4" muted loop playsinline autoplay width="100%" height="100%"></video>
-      
-              </div>
-        
-        <div id="patti" class="scroll-graphic container-fluid position-relative">
-   
-            <div id="patti_portrait" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/clapper_portrait.jpeg">
-            <p id="text_wtp">Patti Clapper is one the residents of this trailer park located on the northeastern side of the town of Aspen. 
-.</p>
-          </div>
-        </div>
-        
-            <div id ="garden" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_2.jpeg">
-            <p id="text_wtp">Since the late 1980s she’s been living in her 1960s trailer since the late 1980s, where she grows vegetables on a 28-inch raised garden due to the presence of lead in the soil.
- </p>
-          </div>
-        </div>
-           
-             <div id="letter" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/letter_sc.png">
-            <p id="text_wtp">Once a year, she also gets a special letter in theher mail.  </p>
-          </div>
-        </div>
-           
-                <div id= "letter" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/letter_sc.png">
-            <p id="text_wtp">“Anyone excavating or exposing more than 1 cubic yard of soil (must) obtain a Soil Removal Permit,” the letter says. 
- </p>
-          </div>
-        </div>
-        
-           <div id="neighborhood" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_3.jpeg">
-            <p id="text_wtp">The letter and the elevated garden are some of the remnants of her decade10-year-long fight against the federal government.
- </p>
-          </div>
-        </div>
-        
-             <div id="neighborhood" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/WTP_3.jpeg">
-            <p id="text_wtp">Clapper lives on a Superfund site, called Smuggler Mountain Superfund. 
- </p>
-          </div>
-        </div>
-           
-           
+        <video class="fullscreen-video lozad" data-poster="assets/smuggler/smuggler_2.jpg" muted loop playsinline autoplay>
+          <source src="assets/smuggler/playlist.m3u8" type="application/x-mpegURL">
+          <source src="assets/smuggler/smuggler_2.mp4" type="video/mp4">
+        </video>
     </div>
-     <div class="row justify-content-center mt-5">
+    
+    
+        
+    <div id="patti" class="scroll-graphic container-fluid position-relative">
+      <div id="patti_portrait" class="row justify-content-center align-items-end d-flex flex-column lozad"
+          data-background-image-set="
+            url('assets/assetsthesisabandonedmines/patti_portrait.jpg') 3x,
+            url('assets/assetsthesisabandonedmines/patti_portrait@0.5x.jpg') 2x,                        
+            url('assets/assetsthesisabandonedmines/patti_portrait@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out">
+          <p class="text_wtp p-4">Patti Clapper is one the residents of this trailer park located on the northeastern side of the town of Aspen.</p>
+        </div>
+      </div>
+        
+      <div id ="garden" class="row justify-content-center align-items-start d-flex flex-column lozad"
+           data-background-image-set="
+            url('assets/assetsthesisabandonedmines/garden.jpg') 3x,
+            url('assets/assetsthesisabandonedmines/garden@0.5x.jpg') 2x,                        
+            url('assets/assetsthesisabandonedmines/garden@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story offset-sm-1 spread-out">
+          <p class="text_wtp p-4">Since the late 1980s she’s been living in her 1960s trailer since the late 1980s, where she grows vegetables on a 28-inch raised garden due to the presence of lead in the soil.</p>
+        </div>
+      </div>
+           
+      <div id="letter" class="row justify-content-center align-items-end d-flex flex-column lozad"
+           data-background-image-set="
+            url('assets/assetsthesisabandonedmines/letter_sc.jpg') 2x,
+            url('assets/assetsthesisabandonedmines/letter_sc@0.75x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5">
+          <p class="text_wtp p-4 spread-out">Once a year, she also gets a special letter in theher mail.</p>
+          <p class="text_wtp p-4 spread-out">“Anyone excavating or exposing more than 1 cubic yard of soil (must) obtain a Soil Removal Permit,” the letter says.</p>
+        </div>
+      </div>
+        
+      <div id="neighborhood" class="row justify-content-center align-items-start d-flex flex-column lozad"
+           data-background-image-set="
+            url('assets/assetsthesisabandonedmines/patti_neighborhood.jpg') 3x,
+            url('assets/assetsthesisabandonedmines/patti_neighborhood@0.5x.jpg') 2x,                        
+            url('assets/assetsthesisabandonedmines/patti_neighborhood@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story offset-sm-1">
+          <p class="text_wtp p-4 spread-out">The letter and the elevated garden are some of the remnants of her decade10-year-long fight against the federal government.</p>
+          <p class="text_wtp p-4 spread-out">Clapper lives on a Superfund site, called Smuggler Mountain Superfund.</p>
+        </div>
+      </div>   
+    </div><!-- close container fluid -->
+    
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
        
-          <p> <span class ="firstcharacter">T</span>he site is one of the few in the state of Colorado that was delisted from the National Priority List of the Superfund Program. 
-
-</p>
+          <p> <span class ="firstcharacter">T</span>he site is one of the few in the state of Colorado that was delisted from the National Priority List of the Superfund Program.</p>
 
           <p>If the site was listed in the first place, it was due to the presence of high levels of lead and cadmium in the soil — which can be dangerous for young children and pregnant women.</p>
 
           <p>In 1988, Clapper was a nurse, a mother of a 3-year-old son and pregnant with her second child. She had just moved to the trailer park, which was built on top of a tailing pond, which stores mining waste, made of lead from silver mining.</p>
           
-          
-           <p>About 1,000 people live in Clapper’s neighborhood— and most are local workers. The site got listed on the National Priority List in 1986, but it’ was not until 1988-1989 that the EPA started to come into town and proposed a cleanup plan, which meant for locals bulldozers coming into their neighborhood.</p>
-          
-          
-           <p>In 1988, Clapper was a nurse, a mother of a 3-year-old son and pregnant with her second child. She had just moved to the trailer park, which was built on top of a tailing pond, which stores mining waste, made of lead from silver mining</p>
-          
-          
-           <p>Clapper, who is now working as a county commissioner, was one of the most vocal residents against the listing, as she feared that the cleanup of the neighborhood would bring more dangers to the health of her children than necessary.</p>
-          
-          
-           <p>The listing occurred after a graduate student from Colorado State University started to research the presence of lead and cadmium in the soil in Aspen Smuggler in 1981. He found elevated levels of heavy metals in the garden vegetables and flowers, up to 20,000 parts per million for lead, about twenty times more than the acceptable levels of lead defined by the EPA in Colorado. The student started to informed the residents, the city and the county about his findings. The following year, the EPA started to investigate the extent of the contamination, until the EPA became fully involved at the site in 1983, at the request of the county.
+          <p>About 1,000 people live in Clapper’s neighborhood— and most are local workers. The site got listed on the National Priority List in 1986, but it’ was not until 1988-1989 that the EPA started to come into town and proposed a cleanup plan, which meant for locals bulldozers coming into their neighborhood.</p>
 
-</p>
+          <p>In 1988, Clapper was a nurse, a mother of a 3-year-old son and pregnant with her second child. She had just moved to the trailer park, which was built on top of a tailing pond, which stores mining waste, made of lead from silver mining</p>
+          
+          <p>Clapper, who is now working as a county commissioner, was one of the most vocal residents against the listing, as she feared that the cleanup of the neighborhood would bring more dangers to the health of her children than necessary.</p>
+          
+          <p>The listing occurred after a graduate student from Colorado State University started to research the presence of lead and cadmium in the soil in Aspen Smuggler in 1981. He found elevated levels of heavy metals in the garden vegetables and flowers, up to 20,000 parts per million for lead, about twenty times more than the acceptable levels of lead defined by the EPA in Colorado. The student started to informed the residents, the city and the county about his findings. The following year, the EPA started to investigate the extent of the contamination, until the EPA became fully involved at the site in 1983, at the request of the county.</p>
+          
           <p>“There was a misconception on the part of many,” said Tom Dunlop, the Superfund site manager working for Pitkin County. At the time, Dunlop worked as the county’s environmental health director. The intent of the Superfund program, which was brand new at the time, was misinterpreted. </p>
 
           <p>The county thought it was money the government would give them to clean up a site. In the 1980s, the area around the trailer park was littered with debris left over from the mining era. But after the county sent a letter to the EPA inviting them to Aspen, the EPA project manager came into town and met Dunlop. </p>
 
-   <p>“He had a pad of paper with a whole schedule of events that EPA was going to do over the next two years, and after talking to him for a couple of hours I realized that this was way bigger than anything the county commissioners had ever thought about when they wrote that letter,” Dunlop said. “There wasn't free money, but it was payback money.”
-</p>
-       </div>
-        </div>
+          <p>“He had a pad of paper with a whole schedule of events that EPA was going to do over the next two years, and after talking to him for a couple of hours I realized that this was way bigger than anything the county commissioners had ever thought about when they wrote that letter,” Dunlop said. “There wasn't free money, but it was payback money.”</p>
+          
+       </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
           
           
-           <div id="ou" class="scroll-graphic container-fluid position-relative">
-   
-            <div id="ou1" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/OU1.png">
-            <p id="text_wtp">The Superfund site includes two sites, Operable Unit 1 which is the Clapper’s neighborhood...
-.</p>
-          </div>
+    <div id="ou" class="scroll-graphic container-fluid position-relative">
+      
+      <div id="ou1" class="row justify-content-center align-items-end d-flex flex-column lozad"
+           data-background-image-set="
+            url('assets/assetsthesisabandonedmines/OU1.jpg') 3x,
+            url('assets/assetsthesisabandonedmines/OU1@0.5x.jpg') 2x,                        
+            url('assets/assetsthesisabandonedmines/OU1@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out">
+          <p class="text_wtp p-4">The Superfund site includes two sites, Operable Unit 1 which is the Clapper’s neighborhood...</p>
         </div>
+      </div>
              
-                     <div id="ou2" class="row justify-content-center d-flex flex-column align-items-center-sm-end">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/OU2.png">
-            <p id="text_wtp">and Operable Unit 2 which includes the Smuggler Mine. 
-
-.</p>
-          </div>
+      <div id="ou2" class="row justify-content-center d-flex flex-column align-items-end lozad"
+           data-background-image-set="
+            url('assets/assetsthesisabandonedmines/OU2.jpg') 3x,
+            url('assets/assetsthesisabandonedmines/OU2@0.5x.jpg') 2x,                        
+            url('assets/assetsthesisabandonedmines/OU2@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out">
+          <p class="text_wtp p-4">and Operable Unit 2 which includes the Smuggler Mine.</p>
         </div>
+      </div>
+      
+    </div><!-- close container -->
              
-             
-        </div>
-             
-          
-           <div class="row justify-content-center mt-5">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
           <p>When Clapper started to learn more about the presence of the EPA in her neighborhood, she came across studies about sites with higher levels of lead and real risks of exposure. So she started to wonder why her home was actually part of a Superfund site.</p>
 
@@ -1228,113 +1440,110 @@ In the upper watershed of East Willow Creek, above the Solomon mine, there are g
 
           <p>Residents need to fill out a permit before doing any excavation work, as soon as they move more than one cubic yard of soil. The soil then goes to the county’s landfill. Typically, between two to 10 permits are submitted to the city a year, CJ Oliver, Aspen’s environmental health manager, said. </p>
 
-            <br><h3>Handling the contaminated soil</h3>  <br>
-             </div>
-        </div>
+          <h3 class="mt-5 mb-2">Handling the contaminated soil</h3>
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
         
         
-         <div id="map_aspen" class="scroll-graphic container-fluid position-relative">
-   
-            <div id="map_aspen" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/map_aspen.jpg">
-            <p id="text_wtp">The Pitkin County landfill, also called Pitkin County Solid Waste Center, is located about 10 miles out of town, along the highway. 
-.</p>
-          </div>
+    <div id="map_aspen" class="scroll-graphic container-fluid position-relative">
+      <div id="map_aspen" class="row justify-content-center align-items-end d-flex flex-column lozad"
+           data-background-image-set="
+            url('assets/assetsthesisabandonedmines/map_aspen.jpg') 3x,
+            url('assets/assetsthesisabandonedmines/map_aspen@0.5x.jpg') 2x,                        
+            url('assets/assetsthesisabandonedmines/map_aspen@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5">
+          <p class="text_wtp p-4 spread-out">The Pitkin County landfill, also called Pitkin County Solid Waste Center, is located about 10 miles out of town, along the highway.</p>
+          <p class="text_wtp p-4 spread-out">It is nestled in the mountains, with probably one of the best views a landfill can have.</p>
         </div>
-             
-                     <div id="map_aspen" class="row justify-content-center align-items-center align-items-sm-end d-flex flex-column">
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/map_aspen.jpg">
-            <p id="text_wtp">It is nestled in the mountains, with probably one of the best views a landfill can have.
-
-
-.</p>
-          </div>
-        </div>
-             
-             
-        </div>
-   
-  <div class="row justify-content-center mt-5">
+      </div>
+    </div>
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
           
           <p>“Why is Smuggler a Superfund site, and over at the base of Aspen Mountain is not a Superfund site?” asked Cathy Hall, Pitkin County Solid Waste director, as other parts of the town of Aspen are built on tailing piles like the Smuggler trailer park. </p>
 
           <p>Each time soil is coming from Smuggler to the landfill, Hall gets a notification, she said, as the soil from the Superfund site cannot be mixed up with other soil, like topsoil. </p>
 
-<p>The Smuggler soil is then used to cover trash in the landfill. At the end of the day, the landfill workers cover the trash with soil so rodents and bears can’t get it
-</p>
-       </div>
-        </div>
+          <p>The Smuggler soil is then used to cover trash in the landfill. At the end of the day, the landfill workers cover the trash with soil so rodents and bears can’t get it.</p>
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
        
           
-           <img src="assets/assetsthesisabandonedmines/landfill.jpeg" class="img-fluid" alt="Picture of landfill">
-      
+    <img class="lozad img-fluid d-block my-5" data-src="assets/assetsthesisabandonedmines/landfill.jpg" 
+     data-srcset="
+        assets/assetsthesisabandonedmines/landfill.jpg 5020w,
+        assets/assetsthesisabandonedmines/landfill@0.75x.jpg 3766w,
+        assets/assetsthesisabandonedmines/landfill@0.5x.jpg 2510w,
+        assets/assetsthesisabandonedmines/landfill@0.25x.jpg 1256w,
+        assets/assetsthesisabandonedmines/landfill@0.1x.jpg 500w"
+     sizes="100vw"
+     alt="Picture of landfill">  
 
-       
-        <div class="row justify-content-center mt-5">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
     
-       <p>“The soils can come here without any additional testing. It's all been tested extensively,” Hall said.</p>
+          <p>“The soils can come here without any additional testing. It's all been tested extensively,” Hall said.</p>
 
-       <p>Smuggler residents have to pay for the handling of their soil, but they negotiated the price tag 20 years ago. They pay $15 a ton, the rate for cover dirt, instead of $93.75 a ton, the for trash rate. </p>
+          <p>Smuggler residents have to pay for the handling of their soil, but they negotiated the price tag 20 years ago. They pay $15 a ton, the rate for cover dirt, instead of $93.75 a ton, the for trash rate. </p>
 
-<p>Hall said that last year they got 823 tons of Smuggler dirt, which is beneficial for the landfill since they need cover soil anyway soil to cover. 
-</p>
-          <br>
+          <p>Hall said that last year they got 823 tons of Smuggler dirt, which is beneficial for the landfill since they need cover soil anyway soil to cover.</p>
 
-        </div>
-
-      </div>
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
         
-        DATA
-        
-         <div class="row justify-content-center mt-5">
+    
+    
+<!-- DATA-->
+    
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
         
-        <p>The landfill sees on average two or three excavation projects per year coming from Smuggler.</p>
+          <p>The landfill sees on average two or three excavation projects per year coming from Smuggler.</p>
 
-        <p>“There's a pretty hefty sum of money that we collect on pennies per ton of trash that goes into that (Hazardous Substance Response) fund,” Hall said. The fund is used by the county to XXXX.</p>
+          <p>“There's a pretty hefty sum of money that we collect on pennies per ton of trash that goes into that (Hazardous Substance Response) fund,” Hall said. The fund is used by the county to XXXX.</p>
 
-        <p>Hall explained that the Smuggler soil is not leaching any lead into the groundwater or the environment. </p>
+          <p>Hall explained that the Smuggler soil is not leaching any lead into the groundwater or the environment. </p>
 
-        <p>“The galena formation and the configuration of the metals combined with the host rock makes it inert, so we’re not getting any leaching,” Dunlop said. </p>
+          <p>“The galena formation and the configuration of the metals combined with the host rock makes it inert, so we’re not getting any leaching,” Dunlop said. </p>
 
+          <p>“The Superfund site has created a level of awareness,” Oliver from the City of Aspen said. “When we see potential development happening in other areas of town that have mining waste there, we're able to prescribe essentially the same level of health protection for those areas as we have with the Superfund site.” That protection includes soil testing, soil mitigation, dirt disposition.</p>
 
-        <p>“The Superfund site has created a level of awareness,” Oliver from the City of Aspen said. “When we see potential development happening in other areas of town that have mining waste there, we're able to prescribe essentially the same level of health protection for those areas as we have with the Superfund site.” That protection includes soil testing, soil mitigation, dirt disposition.</p>
+          <h3 class="mt-3 mb-2">Clean Water</h3>
 
-<br><h3>Clean Water</h3><br>
+          <p>Unlike Silverton and Creede, the watershed in Aspen isn’t contaminated by its mining past, which also has helped to boost recreational activities in Aspen.</p>
 
-        <p>Unlike Silverton and Creede, the watershed in Aspen isn’t contaminated by its mining past, which also has helped to boost recreational activities in Aspen.</p>
+          <p>“The lead from the Superfund site seems very well bound in the soil and rock., Iit doesn't tend to leach out into the water,” Oliver said. </p>
 
-<p>“The lead from the Superfund site seems very well bound in the soil and rock., Iit doesn't tend to leach out into the water,” Oliver said. </p>
-
-           </div>
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
+    
+    
+    <div class="scroll-graphic container-fluid position-relative">
+      <div id="map_aspen_mines" class="row justify-content-center d-flex flex-column align-items-center lozad"
+         data-background-image-set="
+          url('assets/assetsthesisabandonedmines/mine_aspen_map.jpg') 3x,
+          url('assets/assetsthesisabandonedmines/mine_aspen_map@0.5x.jpg') 2x,                        
+          url('assets/assetsthesisabandonedmines/mine_aspen_map@0.25x.jpg') 1x">
+        <div class="graphic-text-box col-10 col-sm-6 col-md-4 story">
+          <p class="text_wtp p-4 spread-out">Near the Smuggler Mine, another shaft, the Mollie Gibson shaft, is discharging water continuously into the nearby river.</p>
+          <p class="text_wtp p-4 spread-out">But even the water flowing out of that shaft does not have elevated lead concentrations and even supports aquatic life.</p>
         </div>
-         <div id="map_aspen_mines" class="scroll-graphic container-fluid position-relative">
-   
-            <div id="map_aspen_mines" class="row justify-content-center d-flex flex-column align-items-center">
->
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/mine_aspen_map.png">
-            <p id="text_wtp">Near the Smuggler Mine, another shaft, the Mollie Gibson shaft, is discharging water continuously into the nearby river. 
-.</p>
-          </div>
-        </div>
-             
-                     <div id="map_aspe_mines" class="row justify-content-center d-flex flex-column align-items-center">
-
-          <div class="graphic-text-box col-10 col-sm-6 col-md-4 story me-sm-5 spread-out" data-image="assets/assetsthesisabandonedmines/mine_aspen_map.png">
-            <p id="text_wtp">But even the water flowing out of that shaft does not have elevated lead concentrations and even supports aquatic life. 
-
-
-
-.</p>
-          </div>
-        </div>
-             
-             
-        </div>
+      </div> 
+    </div>
         
-         <div class="row justify-content-center mt-5">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
           <p>“It’s totally clean,” said Chris Preusch, the former owner of the Smuggler Mine. “We’d go down about 86 feet-90 feet and we would hit the water level.”</p>
 
@@ -1346,15 +1555,26 @@ In the upper watershed of East Willow Creek, above the Solomon mine, there are g
 
           <p>But the Smuggler Mine has a dual permit, both an excavation permit that allows them to extract 25 tons a day, and a tourism permit that lets them hold mine tours for tourists and local students. </p>
 
- <p>Preusch and a group of friends bought the mining property in 1994 before selling it in 2015. But Preusch and Jay Parker, one of the friends, still manage the property on the behalf of the new owner, Aspen Green Mountain.
-</p>
+          <p>Preusch and a group of friends bought the mining property in 1994 before selling it in 2015. But Preusch and Jay Parker, one of the friends, still manage the property on the behalf of the new owner, Aspen Green Mountain.</p>
           
-           </div>
-        </div>
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
         
-          <img src="assets/assetsthesisabandonedmines/mine_smuggler.jpeg" class="img-fluid" alt="Picture of indoor mine">
+    
+    <img class="lozad img-fluid d-block my-5" data-src="assets/assetsthesisabandonedmines/mine_smuggler.jpg" 
+     data-srcset="
+        assets/assetsthesisabandonedmines/mine_smuggler.jpg 4474w,
+        assets/assetsthesisabandonedmines/mine_smuggler@0.75x.jpg 3356w,
+        assets/assetsthesisabandonedmines/mine_smuggler@0.5x.jpg 2238w,
+        assets/assetsthesisabandonedmines/mine_smuggler@0.25x.jpg 1120w,
+        assets/assetsthesisabandonedmines/mine_smuggler@0.1x.jpg 451w"
+     sizes="100vw"
+     alt="Picture of mine smuggler">  
           
-        <div class="row justify-content-center mt-5">
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
           <p>Nowadays, the EPA comes once every five years to inspect the property. The mine needs to be compliant with three elements: making sure the entrance gate is closed, dust mitigation and water mitigation by making sure water stays on site.</p>
 
@@ -1370,69 +1590,175 @@ In the upper watershed of East Willow Creek, above the Solomon mine, there are g
 
           <p>But Preusch said that he knew that the EPA didn’t have a case against them. After the site got delisted, Smuggler was buried as deep in the file cabinet as possible, he said. </p>
 
-<p>With a permit that allows them to extract only 25 tons a day, the mine isn’t profitable anymore. Preusch hopes that one day the mine will be only a tour mine that keeps the memory and history of mining alive. 
-
+          <p>With a permit that allows them to extract only 25 tons a day, the mine isn’t profitable anymore. Preusch hopes that one day the mine will be only a tour mine that keeps the memory and history of mining alive.</p>
           
-          </p>
-          
-          </div>
-        </div>
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
         
-             <div class="row justify-content-center">
+             
+    
+    <div class="container-fluid">
+      <div class="row justify-content-center">
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/ski.jpeg" class="img-fluid" alt="Picture of ski slopes">
+          <img class="lozad img-fluid d-block my-5" data-src="assets/assetsthesisabandonedmines/ski.jpg" 
+           data-srcset="
+              assets/assetsthesisabandonedmines/ski.jpg 5198w,
+              assets/assetsthesisabandonedmines/ski@0.75x.jpg 3899w,
+              assets/assetsthesisabandonedmines/ski@0.5x.jpg 2600w,
+              assets/assetsthesisabandonedmines/ski@0.25x.jpg 1300w,
+              assets/assetsthesisabandonedmines/ski@0.1x.jpg 520w"
+           sizes="50vw"
+           alt="Picture of ski slopes">  
         </div>
         <div class="col-6">
-          <img src="assets/assetsthesisabandonedmines/preusch.jpeg" class="img-fluid" alt="Picture of Preusch">
-        </div>
-      </div>
-        <div class="row justify-content-center mt-5">
+          <img class="lozad img-fluid d-block my-5" data-src="assets/assetsthesisabandonedmines/preusch.jpg" 
+           data-srcset="
+              assets/assetsthesisabandonedmines/preusch.jpg 4702w,
+              assets/assetsthesisabandonedmines/preusch@0.75x.jpg 3527w,
+              assets/assetsthesisabandonedmines/preusch@0.5x.jpg 2352w,
+              assets/assetsthesisabandonedmines/preusch@0.25x.jpg 1176w,
+              assets/assetsthesisabandonedmines/preusch@0.1x.jpg 471w"
+           sizes="50vw"
+           alt="Picture of ski Preusch"> 
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
+    
+    
+    
+    
+    <div class="container">
+      <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
         
-        <p>“What’s truly amazing is all the people skiing on that mountain over there,” Preusch said, while pointing towards the Aspen Ski Resort visible from Smuggler Mine. “If they had any idea how much they weren’t skiing on, underneath, and there are huge holes.”</p>
+          <p>“What’s truly amazing is all the people skiing on that mountain over there,” Preusch said, while pointing towards the Aspen Ski Resort visible from Smuggler Mine. “If they had any idea how much they weren’t skiing on, underneath, and there are huge holes.”</p>
 
-        <p>Looking around the mines, along the sides of the property, several multi-million houses are now built on the Superfund property.</p>
+          <p>Looking around the mines, along the sides of the property, several multi-million houses are now built on the Superfund property.</p>
 
- <p>“We are surrounded by big wealth, and if the EPA wants to wander back in here, they're going to get mired down,” Preusch said. “All these people will get together, they'll combine their money, and they will tie them up for centuries.”
-
-</p>
+          <p>“We are surrounded by big wealth, and if the EPA wants to wander back in here, they're going to get mired down,” Preusch said. “All these people will get together, they'll combine their money, and they will tie them up for centuries.”</p>
+        </div><!-- close col -->
+      </div><!-- close row -->
+    </div><!-- close container -->
     
-       <!-- Scrolling Video -->
    
     
     <footer class="my-5 text-center">
+<!--
       <nav class="socialmedia text-center">
         <a href="#" title="Twitter"><img src="assets/social-media-icons/twitter.svg" alt="Social Media Icon" class="d-inline p-2" width="40" height="auto"></a>
         <a href="#" title="Facebook"><img src="assets/social-media-icons/facebook.svg" alt="Social Media Icon" class="d-inline p-2" width="40" height="auto"></a>
         <a href="#" title="Instagram"><img src="assets/social-media-icons/instagram.svg" alt="Social Media Icon" class="d-inline p-2" width="40" height="auto"></a>
         <a href="#" title="YouTube"><img src="assets/social-media-icons/youtube.svg" alt="Social Media Icon" class="d-inline p-2" width="40" height="auto"></a>
       </nav>    
+-->
     </footer>
     
     
     
     
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-scroll-swap.js"></script>
     <script src="js/jquery-video-scroll.js"></script>
+    <script src="js/hls.min.js"></script>
+    <script src="js/lozad.min.js"></script>
+    <script src="js/intersection-observer.js"></script>
     <script>
       jQuery(document).ready(function($){
         
-        $('.scroll-graphic').scrollSwap();
+        //lazy load
+        const observer = lozad();
+        observer.observe();
         
-        $('img[usemap]').rwdImageMaps();
-        
-        $('.mine-video').videoScroll({
-            width: 960,
-            height: 540,
-            imageFolder: 'assets/mine-images',
-            imageType: 'jpg',
-            imageCount: 60,
-            digits: 3
+        //lazy load, add fully-load attribute to trigger fade effect in CSS
+        $('.lozad').each(function(){
+          if(!$(this).attr('data-background-image')){
+            $(this).on('load loadstart', function(){
+              if($(this).is('video') && $(this).attr('autoplay') && !$(this).attr('data-fully-loaded') && $(this).has("source[src*='m3u8']").length){
+                if (!this.canPlayType('application/vnd.apple.mpegurl')) {
+                  if(Hls.isSupported()){
+                    const hls = new Hls();
+                    hls.loadSource($(this).find("source[src*='m3u8']").attr('src'));
+                    hls.attachMedia(this);
+                  }
+                }
+              }
+              $(this).attr('data-fully-loaded', 'true');
+            });
+          }
         });
+        
+        
+        //hls video support
+        function loadHLS(){
+          $("video source[src*='m3u8']").each(function(){
+            const video = $(this).parent('video').get(0);
+            const src = $(this).attr('src');
+            if (!video.canPlayType('application/vnd.apple.mpegurl')) {
+              if(Hls.isSupported()){
+                const hls = new Hls();
+                hls.loadSource(src);
+                hls.attachMedia(video);
+              }
+            }
+          });
+        }
+        
+        //Load Silverton Video
+        if (!$("#silverton-video-holder video").get(0).canPlayType('application/vnd.apple.mpegurl')) {
+              if(Hls.isSupported()){
+                const silvertonHLS = new Hls();
+                silvertonHLS.loadSource($("#silverton-video-holder source[src*='m3u8']").attr('src'));
+                silvertonHLS.attachMedia($("#silverton-video-holder video").get(0));
+              }
+        }
+        
+  
+        //Silverton Animation
+        $(window).on('scroll', function(){
+          
+          if($(window).scrollTop() > $("#silverton-video-holder").offset().top){
+            
+            const silverton_video = $("#silverton-video-holder video").get(0);
+            
+            if(silverton_video.duration){
+              const distanceFromTopOfContainer = $(window).scrollTop() - $("#silverton-video-holder").offset().top;
+              const percentScrolled = Math.min(Math.max(distanceFromTopOfContainer / $("#silverton-video-holder").height(),0), 1);
+              if(percentScrolled != 1){
+                silverton_video.currentTime = silverton_video.duration * percentScrolled;
+              }
+            }
+          }
+        });
+        
+        
+        
+        //$('.scroll-graphic').scrollSwap();
+        
+
+        
+        //.onscroll-fadeout class will trigger an animation to fade opacity 0 when in viewport
+        //.onscroll-fadein class will trigger an animation to fade opacity 1 when in viewport
+        //
+        //one time fades, no reset
+        $(window).on('scroll', function(e){
+          
+          $('.onscroll-fadeout').each(function(){
+            if($(window).scrollTop() > $(this).offset().top - ($(window).height()/2) && $(this).css('opacity') != 0){
+              $(this).animate({'opacity':0}, {duration:800, queue:true});
+            }
+          });
+          
+          $('.onscroll-fadein').each(function(){
+            if($(window).scrollTop() > $(this).offset().top - ($(window).height()/2) && $(this).css('opacity') != 1){
+              $(this).animate({'opacity':1}, {duration:800, queue:false});
+            }
+          });
+          
+        })
       
+        //tooltip code.
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -1441,10 +1767,5 @@ In the upper watershed of East Willow Creek, above the Solomon mine, there are g
 
       });
     </script>
-    
-     <script src="js/skrollr.min.js"></script>
-  <script>
-  	var s = skrollr.init();
-  </script>
   </body>
 </html>

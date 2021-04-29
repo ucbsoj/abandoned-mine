@@ -2,7 +2,7 @@
 @import url(../fonts/fonts.css);
 
 html,body{
-  overflow-x: hidden;
+/*  overflow-x: hidden;*/
 }
 
 
@@ -18,10 +18,24 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, serif;
 }
 
+/* Lazy Load fade effect */
+video[data-fully-loaded="true"],
+img[data-fully-loaded="true"], 
+[data-fully-loaded="true"] img { 
+  animation-name: showLazyImg; 
+  animation-duration: 1s; 
+  animation-fill-mode: both; 
+} 
+
+@keyframes showLazyImg { 
+  from { opacity: 0; } to { opacity: 1; } 
+}
+
+
 
 /* CSS for hero image, either background photo or background video */
 .hero{
-  background-image: url("../assets/sample-images/desk-1.jpg");
+  background-image: url("../assets/hero_video/hero_video.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -60,41 +74,6 @@ h1, h2, h3, h4, h5, h6 {
 .vh-400{ height: 400vh;}
 .vh-500{ height: 500vh;}
 .vh-600{ height: 600vh;}
-
-
-
-
-/*
-.scroll-graphic::before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  top:0;
-  left:0;
-  background-image: url(../assets/sample-images/map-1.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.scroll-graphic::after{
-  content: "";
-  position: absolute;
-  z-index: -2;
-  height: 100%;
-  width: 100%;
-  top:0;
-  left:0;
-  background-image: url(../assets/sample-images/map-2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-*/
 
 
 
