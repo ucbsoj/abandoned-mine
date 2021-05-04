@@ -75,7 +75,10 @@ img[data-fully-loaded="true"],
 .vh-500{ height: 500vh;}
 .vh-600{ height: 600vh;}
 
-
+.scroll-graphic{
+  width: 100vw;
+  min-height: 100vh;
+}
 
 .spread-out{
   margin-top:100vh;
